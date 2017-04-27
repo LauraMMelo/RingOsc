@@ -1,0 +1,24 @@
+ //NET "clk"      LOC = "P54"; # Bank = 2,  Pin name = IO_L5N_2/D3/GCLK31, Sch name = CLK1
+
+ //NET "LD0"    LOC = "P15"; # Bank = 3, Pin name = IO_L4N_3/GCLK21      Sch name = LD0
+ //NET "LD1"    LOC = "P14"; # Bank = 3, Pin name = IO_L4P_3/GCLK20      Sch name = LD1
+ //NET "LD2"    LOC = "P8";  # Bank = 3, Pin name = IO_L3N_3,            Sch name = LD2
+ //NET "LD3"    LOC = "P7";  # Bank = 3, Pin name = IO_L3P_3,            Sch name = LD3
+ //NET "LD4"    LOC = "P5";  # Bank = 3, Pin name = IO_L2N_3/VREF_3,     Sch name = LD4
+ //NET "LD5"    LOC = "P4";  # Bank = 3, Pin name = IO_L2P_3,            Sch name = LD5
+ //NET "LD6"    LOC = "P3";  # Bank = 3, Pin name = IO_L1N_3,            Sch name = LD6
+ //NET "LD7"    LOC = "P2";  # Bank = 3, Pin name = IO_L1P_3,            Sch name = LD7 
+ 
+ NET "Mode"     LOC = "P36"; # Bank = 3, Pin name = IP,                  Sch name = SW1
+ NET "Stress"     LOC = "P29"; # Bank = 3, Pin name = IO(3S100E)/IP(3S250E),Sch name = SW2
+ NET "OUT" LOC = "P82"; # Bank = 1, Pin name = IO_L3N_1/A11,            Sch name = JA-3
+ 
+ //NET "C1" LOC = "P76"; # Bank = 1, Pin name = IO_L2P_1/A14,            Sch name = JC-3
+ //NET "" LOC = "P85"; # Bank = 1, Pin name = IO_L4P_1/A10/GCLK4,      Sch name = JC-4
+ 
+ //NET "C1"    LOC = "P69"; # Bank = 2, Pin name = IP,                   Sch name = BTN0
+ //NET "C2"    LOC = "P48"; # Bank = 2, Pin name = IP_L3N_2/VREF_2       Sch name = BTN1
+ //NET "btn<2>"    LOC = "P47"; # Bank = 2, Pin name = IP_L3P_2,             Sch name = BTN2
+ //NET "btn<3>"    LOC = "P41"; # Bank = 2, Pin name = IP,                   Sch name = BTN3
+ //NET "C1" CLOCK_DEDICATED_ROUTE = FALSE;
+ //NET "C2" CLOCK_DEDICATED_ROUTE = FALSE;

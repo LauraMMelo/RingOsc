@@ -1,0 +1,5 @@
+verilog work "LUTSel.v"
+verilog work "inverter.v"
+verilog work "RingOsc1.v"
+verilog work "Counter.v"
+verilog work "Top.v"

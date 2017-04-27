@@ -1,0 +1,154 @@
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf -ucf Counter_ports.ucf 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf -ucf Counter_ports.ucf 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf -ucf Counter_ports.ucf 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf -ucf Counter_ports.ucf 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf -ucf Counter_ports.ucf 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf -ucf Counter_ports.ucf 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf -ucf Counter_ports.ucf 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf -ucf Counter_ports.ucf 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf -ucf Counter_ports.ucf 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf -ucf Counter_ports.ucf 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf -ucf Counter_ports.ucf 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Counter_ports.ucf -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf -ucf Counter_ports.ucf 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "Counter.ngc" Counter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -t 1 Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 

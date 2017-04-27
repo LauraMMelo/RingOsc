@@ -1,0 +1,398 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: Counter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Counter.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Counter"
+Output Format                      : NGC
+Target Device                      : xc3s250e-4-tq144
+
+---- Source Options
+Top Module Name                    : Counter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Counter.v" in library work
+Module <Counter> compiled
+No errors in compilation
+Analysis of file <"Counter.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Counter> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Counter>.
+Module <Counter> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Counter>.
+    Related source file is "Counter.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <LD0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8-bit up counter for signal <out>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Counter> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Latches                                              : 8
+ 1-bit latch                                           : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Latches                                              : 8
+ 1-bit latch                                           : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Counter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Counter, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Counter.ngr
+Top Level Output File Name         : Counter
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# BELS                             : 26
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 7
+#      MUXCY                       : 7
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 16
+#      FDCE                        : 8
+#      LDE                         : 8
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      IBUF                        : 2
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250etq144-4 
+
+ Number of Slices:                        4  out of   2448     0%  
+ Number of Slice Flip Flops:              8  out of   4896     0%  
+ Number of 4 input LUTs:                  9  out of   4896     0%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    108    10%  
+    IOB Flip Flops:                       8
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+enable                             | IBUF+BUFG              | 8     |
+in                                 | BUFGP                  | 8     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 8     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.788ns (Maximum Frequency: 263.992MHz)
+   Minimum input arrival time before clock: 4.054ns
+   Maximum output required time after clock: 4.368ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'in'
+  Clock period: 3.788ns (frequency: 263.992MHz)
+  Total number of paths / destination ports: 36 / 8
+-------------------------------------------------------------------------
+Delay:               3.788ns (Levels of Logic = 8)
+  Source:            out_1 (FF)
+  Destination:       out_7 (FF)
+  Source Clock:      in rising
+  Destination Clock: in rising
+
+  Data Path: out_1 to out_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.591   0.622  out_1 (out_1)
+     LUT1:I0->O            1   0.704   0.000  Mcount_out_cy<1>_rt (Mcount_out_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  Mcount_out_cy<1> (Mcount_out_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_out_cy<2> (Mcount_out_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_out_cy<3> (Mcount_out_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_out_cy<4> (Mcount_out_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_out_cy<5> (Mcount_out_cy<5>)
+     MUXCY:CI->O           0   0.059   0.000  Mcount_out_cy<6> (Mcount_out_cy<6>)
+     XORCY:CI->O           1   0.804   0.000  Mcount_out_xor<7> (Result<7>)
+     FDCE:D                    0.308          out_7
+    ----------------------------------------
+    Total                      3.788ns (3.166ns logic, 0.622ns route)
+                                       (83.6% logic, 16.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.054ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       LD7 (LATCH)
+  Destination Clock: enable falling
+
+  Data Path: reset to LD7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.218   0.820  reset_IBUF (reset_IBUF)
+     INV:I->O              8   0.704   0.757  LD0_0_not00001_INV_0 (LD0_0_not0000)
+     LDE:GE                    0.555          LD0
+    ----------------------------------------
+    Total                      4.054ns (2.477ns logic, 1.577ns route)
+                                       (61.1% logic, 38.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'in'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.593ns (Levels of Logic = 1)
+  Source:            enable (PAD)
+  Destination:       out_0 (FF)
+  Destination Clock: in rising
+
+  Data Path: enable to out_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.218   0.820  enable_IBUF (enable_IBUF1)
+     FDCE:CE                   0.555          out_0
+    ----------------------------------------
+    Total                      2.593ns (1.773ns logic, 0.820ns route)
+                                       (68.4% logic, 31.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            LD0 (LATCH)
+  Destination:       LD0 (PAD)
+  Source Clock:      enable falling
+
+  Data Path: LD0 to LD0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              1   0.676   0.420  LD0 (LD0_OBUF)
+     OBUF:I->O                 3.272          LD0_OBUF (LD0)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.74 secs
+ 
+--> 
+
+Total memory usage is 285452 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

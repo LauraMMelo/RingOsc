@@ -1,0 +1,127 @@
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf 
+bitgen -intstyle ise -f RingOscillator.ut RingOscillator.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RingOscillator.ucf -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf -ucf RingOscillator.ucf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RingOscillator.ucf -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf -ucf RingOscillator.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RingOsc_ports.ucf -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf -ucf RingOsc_ports.ucf 
+bitgen -intstyle ise -f RingOscillator.ut RingOscillator.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RingOsc_ports.ucf -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf -ucf RingOsc_ports.ucf 
+bitgen -intstyle ise -f RingOscillator.ut RingOscillator.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RingOsc_ports.ucf -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf -ucf RingOsc_ports.ucf 
+bitgen -intstyle ise -f RingOscillator.ut RingOscillator.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RingOsc_ports.ucf -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf -ucf RingOsc_ports.ucf 
+bitgen -intstyle ise -f RingOscillator.ut RingOscillator.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RingOsc_ports.ucf -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf -ucf RingOsc_ports.ucf 
+bitgen -intstyle ise -f RingOscillator.ut RingOscillator.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RingOsc_ports.ucf -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf -ucf RingOsc_ports.ucf 
+bitgen -intstyle ise -f RingOscillator.ut RingOscillator.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf 
+bitgen -intstyle ise -f RingOscillator.ut RingOscillator.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf 
+bitgen -intstyle ise -f RingOscillator.ut RingOscillator.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf 
+bitgen -intstyle ise -f RingOscillator.ut RingOscillator.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOscillator.ngc" RingOscillator.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOscillator_map.ncd RingOscillator.ngd RingOscillator.pcf 
+par -w -intstyle ise -ol high -t 1 RingOscillator_map.ncd RingOscillator.ncd RingOscillator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOscillator.twx RingOscillator.ncd -o RingOscillator.twr RingOscillator.pcf 

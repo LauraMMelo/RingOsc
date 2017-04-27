@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/DFlipflop.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/DFlipflop.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "DFlipflop.ngc" DFlipflop.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o DFlipflop_map.ncd DFlipflop.ngd DFlipflop.pcf 
+par -w -intstyle ise -ol high -t 1 DFlipflop_map.ncd DFlipflop.ncd DFlipflop.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DFlipflop.twx DFlipflop.ncd -o DFlipflop.twr DFlipflop.pcf 

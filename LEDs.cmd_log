@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/LEDs.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/LEDs.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "LEDs.ngc" LEDs.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o LEDs_map.ncd LEDs.ngd LEDs.pcf 
+par -w -intstyle ise -ol high -t 1 LEDs_map.ncd LEDs.ncd LEDs.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LEDs.twx LEDs.ncd -o LEDs.twr LEDs.pcf 

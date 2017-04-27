@@ -1,0 +1,4 @@
+
+ NET "OUT" LOC = "P92"; # Bank = 1, Pin name = IO_L6N_1/A5/GCLK9,       Sch name = JA-4
+  NET "Mode"     LOC = "P36"; # Bank = 3, Pin name = IP,                  Sch name = SW1
+ NET "Stress"     LOC = "P29"; # Bank = 3, Pin name = IO(3S100E)/IP(3S250E),Sch name = SW2

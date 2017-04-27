@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOsc2.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOsc2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOsc2.ngc" RingOsc2.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOsc2_map.ncd RingOsc2.ngd RingOsc2.pcf 
+par -w -intstyle ise -ol high -t 1 RingOsc2_map.ncd RingOsc2.ncd RingOsc2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOsc2.twx RingOsc2.ncd -o RingOsc2.twr RingOsc2.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOsc2.xst" -ofn "C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/RingOsc2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 "RingOsc2.ngc" RingOsc2.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RingOsc2_map.ncd RingOsc2.ngd RingOsc2.pcf 
+par -w -intstyle ise -ol high -t 1 RingOsc2_map.ncd RingOsc2.ncd RingOsc2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RingOsc2.twx RingOsc2.ncd -o RingOsc2.twr RingOsc2.pcf 
