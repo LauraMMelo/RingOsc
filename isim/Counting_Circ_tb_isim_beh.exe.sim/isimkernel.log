@@ -1,0 +1,29 @@
+Command line:
+   Counting_Circ_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51093
+
+Sat Apr 29 18:01:43 2017
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 841.589 Meg
+
+ Total Signals          : 22
+ Total Nets             : 41
+ Total Signal Drivers   : 12
+ Total Blocks           : 5
+ Total Primitive Blocks : 3
+ Total Processes        : 20
+ Total Traceable Variables  : 27
+ Total Scalar Nets and Variables : 244
+Total Line Count : 37
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 841.589 Meg
+
+Sat Apr 29 18:02:06 2017
+

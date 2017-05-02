@@ -58,6 +58,41 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Counter_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Counter_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Counter_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Counting_Circ_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Counting_Circ_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Counting_Circ_tb_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Counting_circuit.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Counting_circuit.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Counting_circuit.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Counting_circuit.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Counting_circuit.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Counting_circuit.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Counting_circuit.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Counting_circuit.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Counting_circuit.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Counting_circuit.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Counting_circuit.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Counting_circuit.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Counting_circuit.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Counting_circuit.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Counting_circuit.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Counting_circuit.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Counting_circuit.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Counting_circuit.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Counting_circuit.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Counting_circuit_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Counting_circuit_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Counting_circuit_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Counting_circuit_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Counting_circuit_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Counting_circuit_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Counting_circuit_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Counting_circuit_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Counting_circuit_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Counting_circuit_par.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Counting_circuit_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Counting_circuit_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Counting_circuit_xst.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="DFlipflop.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="DFlipflop.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="DFlipflop.lso"/>
@@ -147,17 +182,14 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="RingOsc2.ngc"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="RingOsc2.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="RingOsc2.ngr"/>
-    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="RingOsc2.pad"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="RingOsc2.par" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="RingOsc2.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RingOsc2.prj"/>
-    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="RingOsc2.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="RingOsc2.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="RingOsc2.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="RingOsc2.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="RingOsc2.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="RingOsc2.unroutes" xil_pn:subbranch="Par"/>
-    <file xil_pn:fileType="FILE_XPI" xil_pn:name="RingOsc2.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="RingOsc2.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="RingOsc2_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="RingOsc2_guide.ncd" xil_pn:origination="imported"/>
@@ -166,14 +198,9 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="RingOsc2_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="RingOsc2_map.ncd" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="RingOsc2_map.ngm" xil_pn:subbranch="Map"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="RingOsc2_map.xrpt"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="RingOsc2_ngdbuild.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="RingOsc2_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="RingOsc2_pad.txt" xil_pn:subbranch="Par"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="RingOsc2_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="RingOsc2_summary.html"/>
-    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="RingOsc2_summary.xml"/>
-    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="RingOsc2_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="RingOsc2_xst.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="RingOscillator.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="RingOscillator.cmd_log"/>
@@ -258,9 +285,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="counter.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="counter.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="counter.drc" xil_pn:subbranch="FPGAConfiguration"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="counter_test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="counter_test_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="counter_test_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
@@ -289,15 +314,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493323909" xil_pn:in_ck="8681933711301547594" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1493323909">
+    <transform xil_pn:end_ts="1493499698" xil_pn:in_ck="-8213652154416086230" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1493499698">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Counter.v"/>
       <outfile xil_pn:name="Counter_tb.v"/>
+      <outfile xil_pn:name="Counting_Circ_tb.v"/>
       <outfile xil_pn:name="Counting_circuit.v"/>
       <outfile xil_pn:name="LUTSel.v"/>
       <outfile xil_pn:name="RingOsc1.v"/>
@@ -307,28 +329,24 @@
       <outfile xil_pn:name="counter_test.v"/>
       <outfile xil_pn:name="inverter.v"/>
     </transform>
-    <transform xil_pn:end_ts="1493235772" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8518582589454513046" xil_pn:start_ts="1493235772">
+    <transform xil_pn:end_ts="1493480657" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8352276514417746835" xil_pn:start_ts="1493480657">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493235772" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4591508192757286232" xil_pn:start_ts="1493235772">
+    <transform xil_pn:end_ts="1493480657" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6073263566087617899" xil_pn:start_ts="1493480657">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493233152" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="7179621038057595172" xil_pn:start_ts="1493233152">
+    <transform xil_pn:end_ts="1493483775" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3393869022599309290" xil_pn:start_ts="1493483775">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493323909" xil_pn:in_ck="8681933711301547594" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1493323909">
+    <transform xil_pn:end_ts="1493499698" xil_pn:in_ck="-8213652154416086230" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1493499698">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Counter.v"/>
       <outfile xil_pn:name="Counter_tb.v"/>
+      <outfile xil_pn:name="Counting_Circ_tb.v"/>
       <outfile xil_pn:name="Counting_circuit.v"/>
       <outfile xil_pn:name="LUTSel.v"/>
       <outfile xil_pn:name="RingOsc1.v"/>
@@ -338,28 +356,24 @@
       <outfile xil_pn:name="counter_test.v"/>
       <outfile xil_pn:name="inverter.v"/>
     </transform>
-    <transform xil_pn:end_ts="1493323918" xil_pn:in_ck="8681933711301547594" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-830517164376242483" xil_pn:start_ts="1493323909">
+    <transform xil_pn:end_ts="1493499701" xil_pn:in_ck="-8213652154416086230" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8579658552736909433" xil_pn:start_ts="1493499698">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="counter_test_beh.prj"/>
-      <outfile xil_pn:name="counter_test_isim_beh.exe"/>
+      <outfile xil_pn:name="Counting_Circ_tb_beh.prj"/>
+      <outfile xil_pn:name="Counting_Circ_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1493323918" xil_pn:in_ck="-7657148488659678825" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3123212741796371536" xil_pn:start_ts="1493323918">
+    <transform xil_pn:end_ts="1493499702" xil_pn:in_ck="4706659130540609090" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6381435217384071690" xil_pn:start_ts="1493499701">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="counter_test_isim_beh.wdb"/>
+      <outfile xil_pn:name="Counting_Circ_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
@@ -367,112 +381,101 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493232967" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="52706803864898944" xil_pn:start_ts="1493232967">
+    <transform xil_pn:end_ts="1493483873" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-5032645173043224910" xil_pn:start_ts="1493483873">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493232967" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="7179621038057595172" xil_pn:start_ts="1493232967">
+    <transform xil_pn:end_ts="1493483873" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-3393869022599309290" xil_pn:start_ts="1493483873">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493232967" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1493232967">
+    <transform xil_pn:end_ts="1493483873" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1493483873">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493232967" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="2109504681494722110" xil_pn:start_ts="1493232967">
+    <transform xil_pn:end_ts="1493483873" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="705747388221334896" xil_pn:start_ts="1493483873">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493232967" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="5199527252417716204" xil_pn:start_ts="1493232967">
+    <transform xil_pn:end_ts="1493483873" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="5199527252417716204" xil_pn:start_ts="1493483873">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493232967" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="9122839153134419502" xil_pn:start_ts="1493232967">
+    <transform xil_pn:end_ts="1493483873" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5856932824064433952" xil_pn:start_ts="1493483873">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493235854" xil_pn:in_ck="-1186266478216169835" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-3129030877090134857" xil_pn:start_ts="1493235842">
+    <transform xil_pn:end_ts="1493484260" xil_pn:in_ck="-7923954908751597966" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6658529833809014359" xil_pn:start_ts="1493484249">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
-      <outfile xil_pn:name="LUTSel.ngr"/>
-      <outfile xil_pn:name="RingOsc2.lso"/>
-      <outfile xil_pn:name="RingOsc2.ngc"/>
-      <outfile xil_pn:name="RingOsc2.ngr"/>
-      <outfile xil_pn:name="RingOsc2.prj"/>
-      <outfile xil_pn:name="RingOsc2.stx"/>
-      <outfile xil_pn:name="RingOsc2.syr"/>
-      <outfile xil_pn:name="RingOsc2.xst"/>
-      <outfile xil_pn:name="RingOsc2_xst.xrpt"/>
+      <outfile xil_pn:name="Counter.ngr"/>
+      <outfile xil_pn:name="Counting_circuit.lso"/>
+      <outfile xil_pn:name="Counting_circuit.ngc"/>
+      <outfile xil_pn:name="Counting_circuit.ngr"/>
+      <outfile xil_pn:name="Counting_circuit.prj"/>
+      <outfile xil_pn:name="Counting_circuit.stx"/>
+      <outfile xil_pn:name="Counting_circuit.syr"/>
+      <outfile xil_pn:name="Counting_circuit.xst"/>
+      <outfile xil_pn:name="Counting_circuit_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1493232978" xil_pn:in_ck="-3652718915549699498" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784892775516769769" xil_pn:start_ts="1493232978">
+    <transform xil_pn:end_ts="1493483657" xil_pn:in_ck="-3652718915549699498" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-122223062579282405" xil_pn:start_ts="1493483657">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1493235861" xil_pn:in_ck="-5395910295780365701" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4845380167290218201" xil_pn:start_ts="1493235854">
+    <transform xil_pn:end_ts="1493484268" xil_pn:in_ck="-1219690152088699142" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7983758960604113511" xil_pn:start_ts="1493484260">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="RingOsc2.bld"/>
-      <outfile xil_pn:name="RingOsc2.ngd"/>
-      <outfile xil_pn:name="RingOsc2_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="Counting_circuit.bld"/>
+      <outfile xil_pn:name="Counting_circuit.ngd"/>
+      <outfile xil_pn:name="Counting_circuit_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1493235866" xil_pn:in_ck="-7441380308345726028" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="4434801857544382025" xil_pn:start_ts="1493235861">
+    <transform xil_pn:end_ts="1493484273" xil_pn:in_ck="8904958460825883476" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="4434801857544382025" xil_pn:start_ts="1493484268">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="RingOsc2.pcf"/>
-      <outfile xil_pn:name="RingOsc2_map.map"/>
-      <outfile xil_pn:name="RingOsc2_map.mrp"/>
-      <outfile xil_pn:name="RingOsc2_map.ncd"/>
-      <outfile xil_pn:name="RingOsc2_map.ngm"/>
-      <outfile xil_pn:name="RingOsc2_map.xrpt"/>
-      <outfile xil_pn:name="RingOsc2_summary.xml"/>
-      <outfile xil_pn:name="RingOsc2_usage.xml"/>
+      <outfile xil_pn:name="Counting_circuit.pcf"/>
+      <outfile xil_pn:name="Counting_circuit_map.map"/>
+      <outfile xil_pn:name="Counting_circuit_map.mrp"/>
+      <outfile xil_pn:name="Counting_circuit_map.ncd"/>
+      <outfile xil_pn:name="Counting_circuit_map.ngm"/>
+      <outfile xil_pn:name="Counting_circuit_map.xrpt"/>
+      <outfile xil_pn:name="Counting_circuit_summary.xml"/>
+      <outfile xil_pn:name="Counting_circuit_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1493235879" xil_pn:in_ck="1950086846260483747" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1493235866">
+    <transform xil_pn:end_ts="1493484284" xil_pn:in_ck="2608771755891176124" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1493484273">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="RingOsc2.ncd"/>
-      <outfile xil_pn:name="RingOsc2.pad"/>
-      <outfile xil_pn:name="RingOsc2.par"/>
-      <outfile xil_pn:name="RingOsc2.ptwx"/>
-      <outfile xil_pn:name="RingOsc2.unroutes"/>
-      <outfile xil_pn:name="RingOsc2.xpi"/>
-      <outfile xil_pn:name="RingOsc2_pad.csv"/>
-      <outfile xil_pn:name="RingOsc2_pad.txt"/>
-      <outfile xil_pn:name="RingOsc2_par.xrpt"/>
+      <outfile xil_pn:name="Counting_circuit.ncd"/>
+      <outfile xil_pn:name="Counting_circuit.pad"/>
+      <outfile xil_pn:name="Counting_circuit.par"/>
+      <outfile xil_pn:name="Counting_circuit.ptwx"/>
+      <outfile xil_pn:name="Counting_circuit.unroutes"/>
+      <outfile xil_pn:name="Counting_circuit.xpi"/>
+      <outfile xil_pn:name="Counting_circuit_pad.csv"/>
+      <outfile xil_pn:name="Counting_circuit_pad.txt"/>
+      <outfile xil_pn:name="Counting_circuit_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1493235879" xil_pn:in_ck="-3349831654950534888" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1493235875">
+    <transform xil_pn:end_ts="1493484284" xil_pn:in_ck="-552936953660923212" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1493484281">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="RingOsc2.twr"/>
-      <outfile xil_pn:name="RingOsc2.twx"/>
+      <outfile xil_pn:name="Counting_circuit.twr"/>
+      <outfile xil_pn:name="Counting_circuit.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
     </transform>
   </transforms>

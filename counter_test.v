@@ -46,7 +46,13 @@ module counter_test;
 		// Wait 100 ns for global reset to finish
 		#100;
         
-		repeat(20) #10 clk = ~clk;
+		repeat(101) #3 clk = ~clk;
+		#3
+		rst_n = 0;
+		#3
+		rst_n = 1;
+		#3
+		repeat(101) #3 clk = ~clk;
 
 	end
       

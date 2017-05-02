@@ -19,28 +19,22 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Counting_circuit(clk, Ring_in, value_out);
+		parameter max = 99;
 		input clk, Ring_in;
-		output reg value_out;
-		reg rst_value;
+		output reg [7:0] value_out = 0;
+		wire [7:0] rst_value;
 		reg rst = 1;
-		reg ring_value;
+		wire [7:0] ring_value;
 		
 		nBitCounter Counter1(.count(rst_value), .clk(clk), .rst_n(rst));
 		
 		nBitCounter Counter2(.count(ring_value), .clk(Ring_in), .rst_n(rst));
 		
-		always@(*)
-			if(rst_value < 100) begin
-					rst = 0;
-					value_out = ring_value;
+		always@(posedge clk)
+			if(rst_value > max) begin
+					value_out = 511;
+					rst = 0;					
+					$display("ow");
 				end
-			else begin
-					rst = 1;					
-				end
-		
-	
-		
-	
-
 
 endmodule
