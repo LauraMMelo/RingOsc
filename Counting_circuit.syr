@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: Counting_circuit.prj
 
@@ -139,7 +139,6 @@ Module <nBitCounter> is correct for synthesis.
 =========================================================================
 
 Performing bidirectional port resolution...
-INFO:Xst:2679 - Register <value_out> in unit <Counting_circuit> has a constant value of 01100110 during circuit operation. The register is replaced by logic.
 
 Synthesizing Unit <nBitCounter>.
     Related source file is "Counter.v".
@@ -152,22 +151,30 @@ Unit <nBitCounter> synthesized.
 Synthesizing Unit <Counting_circuit>.
     Related source file is "Counting_circuit.v".
 WARNING:Xst:646 - Signal <ring_value> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <reset> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit register for signal <value_out>.
     Found 1-bit register for signal <rst>.
-    Found 8-bit comparator less for signal <rst$cmp_lt0000> created at line 34.
+    Found 8-bit comparator less for signal <value_out$cmp_lt0000> created at line 36.
     Summary:
-	inferred   1 D-type flip-flop(s).
+	inferred   9 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 Unit <Counting_circuit> synthesized.
 
-WARNING:Xst:524 - All outputs of the instance <Counter1> of the block <nBitCounter> are unconnected in block <Counting_circuit>.
-   This instance will be removed from the design along with all underlying logic
 WARNING:Xst:524 - All outputs of the instance <Counter2> of the block <nBitCounter> are unconnected in block <Counting_circuit>.
    This instance will be removed from the design along with all underlying logic
 
 =========================================================================
 HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 8-bit comparator less                                 : 1
+
 =========================================================================
 
 =========================================================================
@@ -178,12 +185,20 @@ Found no macro
 =========================================================================
 Advanced HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+# Comparators                                          : 1
+ 8-bit comparator less                                 : 1
+
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+INFO:Xst:2261 - The FF/Latch <value_out_0> in Unit <Counting_circuit> is equivalent to the following 7 FFs/Latches, which will be removed : <value_out_1> <value_out_2> <value_out_3> <value_out_4> <value_out_5> <value_out_6> <value_out_7> 
 
 Optimizing unit <Counting_circuit> ...
 
@@ -196,7 +211,10 @@ Final Macro Processing ...
 =========================================================================
 Final Register Report
 
-Found no macro
+Macro Statistics
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+
 =========================================================================
 
 =========================================================================
@@ -224,9 +242,20 @@ Design Statistics
 # IOs                              : 10
 
 Cell Usage :
-# BELS                             : 2
+# BELS                             : 29
 #      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 7
+#      LUT3_D                      : 1
+#      LUT4                        : 2
+#      MUXCY                       : 7
 #      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 10
+#      FDC                         : 8
+#      FDR                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
 # IO Buffers                       : 8
 #      OBUF                        : 8
 =========================================================================
@@ -236,9 +265,12 @@ Device utilization summary:
 
 Selected Device : 3s250etq144-4 
 
- Number of Slices:                        0  out of   2448     0%  
+ Number of Slices:                        8  out of   2448     0%  
+ Number of Slice Flip Flops:             10  out of   4896     0%  
+ Number of 4 input LUTs:                 12  out of   4896     0%  
  Number of IOs:                          10
- Number of bonded IOBs:                   8  out of    108     7%  
+ Number of bonded IOBs:                   9  out of    108     8%  
+ Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
 Partition Resource Summary:
@@ -258,19 +290,27 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-No clock signals found in this design
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 10    |
+-----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
-No asynchronous control signals found in this design
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst_inv(rst_inv1_INV_0:O)          | NONE(Counter1/count_0) | 8     |
+-----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: No path found
+   Minimum period: 4.376ns (Maximum Frequency: 228.519MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
+   Maximum output required time after clock: 4.620ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -278,14 +318,56 @@ Timing Detail:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.376ns (frequency: 228.519MHz)
+  Total number of paths / destination ports: 48 / 10
+-------------------------------------------------------------------------
+Delay:               4.376ns (Levels of Logic = 2)
+  Source:            Counter1/count_3 (FF)
+  Destination:       rst (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Counter1/count_3 to rst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  Counter1/count_3 (Counter1/count_3)
+     LUT3_D:I0->O          1   0.704   0.424  value_out_cmp_lt00001_SW0 (N11)
+     LUT4:I3->O            1   0.704   0.420  rst_not00011 (rst_not0001)
+     FDR:R                     0.911          rst
+    ----------------------------------------
+    Total                      4.376ns (2.910ns logic, 1.466ns route)
+                                       (66.5% logic, 33.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.620ns (Levels of Logic = 1)
+  Source:            value_out_0 (FF)
+  Destination:       value_out<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: value_out_0 to value_out<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.591   0.757  value_out_0 (value_out_0)
+     OBUF:I->O                 3.272          value_out_7_OBUF (value_out<7>)
+    ----------------------------------------
+    Total                      4.620ns (3.863ns logic, 0.757ns route)
+                                       (83.6% logic, 16.4% route)
+
+=========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.06 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.19 secs
  
 --> 
 
-Total memory usage is 289732 kilobytes
+Total memory usage is 254860 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    3 (   0 filtered)

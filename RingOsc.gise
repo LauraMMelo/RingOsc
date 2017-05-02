@@ -80,6 +80,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Counting_circuit.unroutes" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="Counting_circuit.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Counting_circuit.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Counting_circuit_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="Counting_circuit_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Counting_circuit_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Counting_circuit_map.mrp" xil_pn:subbranch="Map"/>
@@ -90,6 +91,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Counting_circuit_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Counting_circuit_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Counting_circuit_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Counting_circuit_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Counting_circuit_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Counting_circuit_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Counting_circuit_xst.xrpt"/>
@@ -314,7 +316,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493499698" xil_pn:in_ck="-8213652154416086230" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1493499698">
+    <transform xil_pn:end_ts="1493755008" xil_pn:in_ck="-8213652154416086230" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1493755007">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Counter.v"/>
@@ -329,11 +331,11 @@
       <outfile xil_pn:name="counter_test.v"/>
       <outfile xil_pn:name="inverter.v"/>
     </transform>
-    <transform xil_pn:end_ts="1493480657" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8352276514417746835" xil_pn:start_ts="1493480657">
+    <transform xil_pn:end_ts="1493749449" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8352276514417746835" xil_pn:start_ts="1493749449">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493480657" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6073263566087617899" xil_pn:start_ts="1493480657">
+    <transform xil_pn:end_ts="1493749449" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6073263566087617899" xil_pn:start_ts="1493749449">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -341,7 +343,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493499698" xil_pn:in_ck="-8213652154416086230" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1493499698">
+    <transform xil_pn:end_ts="1493755008" xil_pn:in_ck="-8213652154416086230" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1493755008">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Counter.v"/>
@@ -356,7 +358,7 @@
       <outfile xil_pn:name="counter_test.v"/>
       <outfile xil_pn:name="inverter.v"/>
     </transform>
-    <transform xil_pn:end_ts="1493499701" xil_pn:in_ck="-8213652154416086230" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8579658552736909433" xil_pn:start_ts="1493499698">
+    <transform xil_pn:end_ts="1493755013" xil_pn:in_ck="-8213652154416086230" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8579658552736909433" xil_pn:start_ts="1493755008">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -368,7 +370,7 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1493499702" xil_pn:in_ck="4706659130540609090" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6381435217384071690" xil_pn:start_ts="1493499701">
+    <transform xil_pn:end_ts="1493755013" xil_pn:in_ck="4706659130540609090" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6381435217384071690" xil_pn:start_ts="1493755013">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -405,7 +407,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493484260" xil_pn:in_ck="-7923954908751597966" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6658529833809014359" xil_pn:start_ts="1493484249">
+    <transform xil_pn:end_ts="1493751503" xil_pn:in_ck="-7923954908751597966" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6658529833809014359" xil_pn:start_ts="1493751494">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -431,7 +433,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493484268" xil_pn:in_ck="-1219690152088699142" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7983758960604113511" xil_pn:start_ts="1493484260">
+    <transform xil_pn:end_ts="1493751509" xil_pn:in_ck="-1219690152088699142" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7983758960604113511" xil_pn:start_ts="1493751503">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
@@ -441,7 +443,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1493484273" xil_pn:in_ck="8904958460825883476" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="4434801857544382025" xil_pn:start_ts="1493484268">
+    <transform xil_pn:end_ts="1493751515" xil_pn:in_ck="8904958460825883476" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="4434801857544382025" xil_pn:start_ts="1493751509">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
@@ -455,7 +457,7 @@
       <outfile xil_pn:name="Counting_circuit_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1493484284" xil_pn:in_ck="2608771755891176124" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1493484273">
+    <transform xil_pn:end_ts="1493751529" xil_pn:in_ck="2608771755891176124" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1493751515">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
@@ -470,7 +472,7 @@
       <outfile xil_pn:name="Counting_circuit_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1493484284" xil_pn:in_ck="-552936953660923212" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1493484281">
+    <transform xil_pn:end_ts="1493751529" xil_pn:in_ck="-552936953660923212" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1493751526">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>

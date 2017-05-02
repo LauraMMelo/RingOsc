@@ -5,18 +5,17 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">value_out</arg>&gt; in unit &lt;<arg fmt="%s" index="2">Counting_circuit</arg>&gt; has a constant value of <arg fmt="%s" index="3">01100110</arg> during circuit operation. The register is replaced by logic.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">ring_value</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ring_value</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="524" delta="old" >All outputs of the instance &lt;<arg fmt="%s" index="1">Counter1</arg>&gt; of the block &lt;<arg fmt="%s" index="2">nBitCounter</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">Counting_circuit</arg>&gt;.
+<msg type="warning" file="Xst" num="524" delta="new" >All outputs of the instance &lt;<arg fmt="%s" index="1">Counter2</arg>&gt; of the block &lt;<arg fmt="%s" index="2">nBitCounter</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">Counting_circuit</arg>&gt;.
 This instance will be removed from the design along with all underlying logic
 </msg>
 
-<msg type="warning" file="Xst" num="524" delta="old" >All outputs of the instance &lt;<arg fmt="%s" index="1">Counter2</arg>&gt; of the block &lt;<arg fmt="%s" index="2">nBitCounter</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">Counting_circuit</arg>&gt;.
-This instance will be removed from the design along with all underlying logic
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">value_out_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Counting_circuit</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;value_out_1&gt; &lt;value_out_2&gt; &lt;value_out_3&gt; &lt;value_out_4&gt; &lt;value_out_5&gt; &lt;value_out_6&gt; &lt;value_out_7&gt; </arg>
 </msg>
 
 </messages>

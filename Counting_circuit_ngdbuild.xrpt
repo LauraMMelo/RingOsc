@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Sat Apr 29 13:44:26 2017">
+  <application stringID="NgdBuild" timeStamp="Tue May 02 15:58:27 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
-          <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Users\Saulo Mendes\AppData\Local\Microsoft\WindowsApps"/>
+          <item stringID="variable" value="PATH"/>
+          <item stringID="value" value="F:\14.7\ISE_DS\ISE\\lib\nt64;F:\14.7\ISE_DS\ISE\\bin\nt64;F:\14.7\ISE_DS\ISE\bin\nt64;F:\14.7\ISE_DS\ISE\lib\nt64;F:\14.7\ISE_DS\ISE\..\..\..\DocNav;F:\14.7\ISE_DS\PlanAhead\bin;F:\14.7\ISE_DS\EDK\bin\nt64;F:\14.7\ISE_DS\EDK\lib\nt64;F:\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;F:\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;F:\14.7\ISE_DS\EDK\gnuwin\bin;F:\14.7\ISE_DS\EDK\gnu\arm\nt\bin;F:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;F:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;F:\14.7\ISE_DS\common\bin\nt64;F:\14.7\ISE_DS\common\lib\nt64;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\ProgramData\Oracle\Java\javapath;C:\Qt\Qt5.3.2\Tools\mingw482_32\bin;C:\Qt\Qt5.3.2\5.3\mingw482_32\lib\cmake;D:\Android\adt-bundle-windows-x86_64-20140702\adt-bundle-windows-x86_64-20140702\sdk\platform-tools;D:\Android\adt-bundle-windows-x86_64-20140702\adt-bundle-windows-x86_64-20140702\sdk\tools;C:\Program Files\TortoiseGit\bin;C:\Program Files\Java\jdk1.7.0_75\bin;D:\Android\OpenCV-2.4.9-android-sdk;C:\Program Files (x86)\QuickTime\QTSystem;C:\Program Files (x86)\QuickTime\QTSystem\"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -20,32 +20,32 @@
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\"/>
+          <item stringID="value" value="F:\14.7\ISE_DS\ISE\"/>
         </row>
         <row stringID="row" value="3">
           <item stringID="variable" value="XILINX_DSP"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE"/>
+          <item stringID="value" value="F:\14.7\ISE_DS\ISE"/>
         </row>
         <row stringID="row" value="4">
           <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\EDK"/>
+          <item stringID="value" value="F:\14.7\ISE_DS\EDK"/>
         </row>
         <row stringID="row" value="5">
           <item stringID="variable" value="XILINX_PLANAHEAD"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\PlanAhead"/>
+          <item stringID="value" value="F:\14.7\ISE_DS\PlanAhead"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
-        <item stringID="User_EnvOsname" value="Microsoft , 64-bit"/>
-        <item stringID="User_EnvOsrelease" value="major release  (build 9200)"/>
+        <item stringID="User_EnvOsname" value="Microsoft Windows 7 , 64-bit"/>
+        <item stringID="User_EnvOsrelease" value="major release  (build 7600)"/>
       </item>
-      <item stringID="User_EnvHost" value="DESKTOP-0PFOR8B"/>
+      <item stringID="User_EnvHost" value="Pedro-PC"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz"/>
-          <item stringID="speed" value="1995 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz"/>
+          <item stringID="speed" value="3292 MHz"/>
         </row>
       </table>
     </section>
@@ -65,14 +65,33 @@
         <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="0"/>
       </section>
       <section stringID="NGDBUILD_PRE_UNISIM_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_BUFGP" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDC" value="8"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDR" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_GND" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="7"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3_D" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="7"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="8"/>
         <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="8"/>
       </section>
       <section stringID="NGDBUILD_POST_UNISIM_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_BUFG" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDC" value="8"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDR" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_GND" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUFG" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="7"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3_D" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="7"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="8"/>
         <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="8"/>
       </section>
       <section stringID="NGDBUILD_CORE_GENERATION_SUMMARY">
         <section stringID="NGDBUILD_CORE_INSTANCES"/>

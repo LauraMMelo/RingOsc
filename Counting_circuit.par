@@ -1,14 +1,14 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-0PFOR8B::  Sat Apr 29 13:44:34 2017
+PEDRO-PC::  Tue May 02 15:58:36 2017
 
 par -w -intstyle ise -ol high -t 1 Counting_circuit_map.ncd
 Counting_circuit.ncd Counting_circuit.pcf 
 
 
 Constraints file: Counting_circuit.pcf.
-Loading device for application Rf_Device from file '3s250e.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '3s250e.nph' in environment F:\14.7\ISE_DS\ISE\.
    "Counting_circuit" is an NCD, version 3.2, device xc3s250e, package tq144, speed -4
 
 Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
@@ -25,10 +25,11 @@ Device speed data version:  "PRODUCTION 1.27 2013-10-13".
 
 Design Summary Report:
 
- Number of External IOBs                           8 out of 108     7%
+ Number of External IOBs                           9 out of 108     8%
 
-   Number of External Input IOBs                  0
+   Number of External Input IOBs                  1
 
+      Number of External Input IBUFs              1
 
    Number of External Output IOBs                 8
 
@@ -37,6 +38,10 @@ Design Summary Report:
    Number of External Bidir IOBs                  0
 
 
+   Number of BUFGMUXs                        1 out of 24      4%
+   Number of Slices                          8 out of 2448    1%
+      Number of SLICEMs                      0 out of 1224    0%
+
 
 
 Overall effort level (-ol):   High 
@@ -44,54 +49,56 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 1 secs 
-Finished initial Timing Analysis.  REAL time: 1 secs 
+Starting initial Timing Analysis.  REAL time: 2 secs 
+Finished initial Timing Analysis.  REAL time: 2 secs 
 
 
 Starting Placer
-Total REAL time at the beginning of Placer: 1 secs 
+Total REAL time at the beginning of Placer: 2 secs 
 Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:21) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:9e) REAL time: 2 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:21) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:9e) REAL time: 2 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:21) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:9e) REAL time: 2 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:21) REAL time: 1 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:5447a12) REAL time: 2 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:21) REAL time: 1 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:5447a12) REAL time: 2 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:21) REAL time: 1 secs 
+Phase 6.36  Local Placement Optimization (Checksum:5447a12) REAL time: 2 secs 
 
 Phase 7.3  Local Placement Optimization
 
-Phase 7.3  Local Placement Optimization (Checksum:c808024) REAL time: 1 secs 
+Phase 7.3  Local Placement Optimization (Checksum:295609da) REAL time: 2 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:c808024) REAL time: 1 secs 
+Phase 8.5  Local Placement Optimization (Checksum:295609da) REAL time: 2 secs 
 
 Phase 9.8  Global Placement
-Phase 9.8  Global Placement (Checksum:c808024) REAL time: 1 secs 
+............
+..
+Phase 9.8  Global Placement (Checksum:45becd18) REAL time: 3 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:c808024) REAL time: 1 secs 
+Phase 10.5  Local Placement Optimization (Checksum:45becd18) REAL time: 3 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:c808024) REAL time: 1 secs 
+Phase 11.18  Placement Optimization (Checksum:44f4bd02) REAL time: 3 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:c808024) REAL time: 1 secs 
+Phase 12.5  Local Placement Optimization (Checksum:44f4bd02) REAL time: 3 secs 
 
-Total REAL time to Placer completion: 1 secs 
-Total CPU  time to Placer completion: 1 secs 
+Total REAL time to Placer completion: 3 secs 
+Total CPU  time to Placer completion: 3 secs 
 Writing design to file Counting_circuit.ncd
 
 
@@ -99,28 +106,36 @@ Writing design to file Counting_circuit.ncd
 Starting Router
 
 
-Phase  1  : 8 unrouted;      REAL time: 4 secs 
+Phase  1  : 47 unrouted;      REAL time: 5 secs 
 
-Phase  2  : 8 unrouted;      REAL time: 4 secs 
+Phase  2  : 40 unrouted;      REAL time: 5 secs 
 
-Phase  3  : 0 unrouted;      REAL time: 4 secs 
+Phase  3  : 3 unrouted;      REAL time: 5 secs 
 
-Phase  4  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  4  : 9 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
 Updating file: Counting_circuit.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Updating file: Counting_circuit.ncd with current fully routed design.
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
-Total REAL time to Router completion: 5 secs 
-Total CPU time to Router completion: 5 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+
+Total REAL time to Router completion: 6 secs 
+Total CPU time to Router completion: 6 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -131,18 +146,54 @@ Partition Implementation Status
 
 Generating "PAR" statistics.
 
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP | BUFGMUX_X2Y10| No   |    6 |  0.003     |  0.111      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
 Timing Score: 0 (Setup: 0, Hold: 0)
 
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.033ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     1.632ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
 
 
 Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 5 secs 
-Total CPU time to PAR completion: 5 secs 
+Total REAL time to PAR completion: 7 secs 
+Total CPU time to PAR completion: 7 secs 
 
-Peak Memory Usage:  294 MB
+Peak Memory Usage:  325 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

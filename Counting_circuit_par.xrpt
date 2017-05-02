@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Sat Apr 29 13:44:35 2017">
+  <application stringID="par" timeStamp="Tue May 02 15:58:38 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
-          <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Users\Saulo Mendes\AppData\Local\Microsoft\WindowsApps"/>
+          <item stringID="variable" value="PATH"/>
+          <item stringID="value" value="F:\14.7\ISE_DS\ISE\\lib\nt64;F:\14.7\ISE_DS\ISE\\bin\nt64;F:\14.7\ISE_DS\ISE\bin\nt64;F:\14.7\ISE_DS\ISE\lib\nt64;F:\14.7\ISE_DS\ISE\..\..\..\DocNav;F:\14.7\ISE_DS\PlanAhead\bin;F:\14.7\ISE_DS\EDK\bin\nt64;F:\14.7\ISE_DS\EDK\lib\nt64;F:\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;F:\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;F:\14.7\ISE_DS\EDK\gnuwin\bin;F:\14.7\ISE_DS\EDK\gnu\arm\nt\bin;F:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;F:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;F:\14.7\ISE_DS\common\bin\nt64;F:\14.7\ISE_DS\common\lib\nt64;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\ProgramData\Oracle\Java\javapath;C:\Qt\Qt5.3.2\Tools\mingw482_32\bin;C:\Qt\Qt5.3.2\5.3\mingw482_32\lib\cmake;D:\Android\adt-bundle-windows-x86_64-20140702\adt-bundle-windows-x86_64-20140702\sdk\platform-tools;D:\Android\adt-bundle-windows-x86_64-20140702\adt-bundle-windows-x86_64-20140702\sdk\tools;C:\Program Files\TortoiseGit\bin;C:\Program Files\Java\jdk1.7.0_75\bin;D:\Android\OpenCV-2.4.9-android-sdk;C:\Program Files (x86)\QuickTime\QTSystem;C:\Program Files (x86)\QuickTime\QTSystem\"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -20,32 +20,32 @@
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\"/>
+          <item stringID="value" value="F:\14.7\ISE_DS\ISE\"/>
         </row>
         <row stringID="row" value="3">
           <item stringID="variable" value="XILINX_DSP"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE"/>
+          <item stringID="value" value="F:\14.7\ISE_DS\ISE"/>
         </row>
         <row stringID="row" value="4">
           <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\EDK"/>
+          <item stringID="value" value="F:\14.7\ISE_DS\EDK"/>
         </row>
         <row stringID="row" value="5">
           <item stringID="variable" value="XILINX_PLANAHEAD"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\PlanAhead"/>
+          <item stringID="value" value="F:\14.7\ISE_DS\PlanAhead"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
-        <item stringID="User_EnvOsname" value="Microsoft , 64-bit"/>
-        <item stringID="User_EnvOsrelease" value="major release  (build 9200)"/>
+        <item stringID="User_EnvOsname" value="Microsoft Windows 7 , 64-bit"/>
+        <item stringID="User_EnvOsrelease" value="major release  (build 7600)"/>
       </item>
-      <item stringID="User_EnvHost" value="DESKTOP-0PFOR8B"/>
+      <item stringID="User_EnvHost" value="Pedro-PC"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz"/>
-          <item stringID="speed" value="1995 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz"/>
+          <item stringID="speed" value="3292 MHz"/>
         </row>
       </table>
     </section>
@@ -58,20 +58,42 @@
       </section>
     </task>
     <task stringID="PAR_DEVICE_UTILIZATION">
-      <section stringID="PAR_DESIGN_SUMMARY"></section>
+      <section stringID="PAR_DESIGN_SUMMARY">
+        <item AVAILABLE="2448" dataType="int" stringID="PAR_SLICES" value="8"></item>
+      </section>
     </task>
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="5 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="5 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="6 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="6 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="5 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="5 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="7 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="7 secs "/>
       </section>
     </task>
     <task stringID="PAR_par">
       <section stringID="PAR_DLY_CLK_REPORT"/>
+      <section stringID="PAR_CLOCK_REPORT">
+        <table stringID="PAR_CLOCK_TABLE">
+          <column label="Clock Net" stringID="CLOCK_NET"/>
+          <column label="Routed" stringID="ROUTED"/>
+          <column label="Resource" stringID="RESOURCE"/>
+          <column label="Locked" stringID="LOCKED"/>
+          <column label="Fanout" stringID="FANOUT"/>
+          <column label="Net Skew(ns)" stringID="NET_SKEW"/>
+          <column label="Max Delay(ns)" stringID="MAX_DELAY"/>
+          <row stringID="row" value="1">
+            <item label="Clock Net" stringID="CLOCK_NET" value="clk_BUFGP"/>
+            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
+            <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X2Y10"/>
+            <item label="Locked" stringID="LOCKED" value="No"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="6.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.003000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.111000"/>
+          </row>
+        </table>
+      </section>
       <section stringID="PAR_PAD_PIN_REPORT">
         <table stringID="PAR_PINOUT_BY_PIN_NUMBER">
           <column label="Pin&#xA;Number" sort="smart" stringID="Pin_Number"/>
@@ -978,10 +1000,16 @@
           </row>
           <row stringID="row" value="129">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P129"/>
-            <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="DIFFSI"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="clk"/>
+            <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IBUF"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IP_L06N_0/GCLK9"/>
-            <item stringID="Direction" value="UNUSED"/>
+            <item stringID="Direction" value="INPUT"/>
+            <item label="IO&#xA;Standard" sort="smart" stringID="IO_Standard" value="LVCMOS25*"/>
             <item label="IO Bank&#xA;Number" stringID="IO_Bank_Number" value="0"/>
+            <item label="IOB&#xA;Delay" stringID="IOB_Delay" value="NONE"/>
+            <item label="Constraint" stringID="Constraint" value="UNLOCATED"/>
+            <item label="IO&#xA;Register" stringID="IO_Register" value="NO"/>
+            <item label="Signal&#xA;Integrity" stringID="Signal_Integrity" value="NONE"/>
           </row>
           <row stringID="row" value="130">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P130"/>

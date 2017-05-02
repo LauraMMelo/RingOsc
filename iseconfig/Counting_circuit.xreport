@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-04-29T17:41:16</DateModified>
+  <DateModified>2017-05-02T13:57:47</DateModified>
   <ModuleName>Counting_circuit</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/iseconfig/Counting_circuit.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Saulo/Documents/RingOsc/iseconfig/Counting_circuit.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Saulo/Documents/RingOsc\</ImplementationReportsDirectory>
   <DateInitialized>2017-04-29T17:04:26</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
