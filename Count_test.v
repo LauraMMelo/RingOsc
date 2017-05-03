@@ -4,15 +4,15 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   11:41:36 04/29/2017
-// Design Name:   Counting_circuit
-// Module Name:   C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/Counting_Circ_tb.v
+// Create Date:   16:41:31 04/26/2017
+// Design Name:   nBitCounter
+// Module Name:   C:/Users/Saulo Mendes/Documents/Nova pasta/RingOsc/counter_test.v
 // Project Name:  RingOsc
 // Target Device:  
 // Tool versions:  
 // Description: 
 //
-// Verilog Test Fixture created by ISE for module: Counting_circuit
+// Verilog Test Fixture created by ISE for module: nBitCounter
 //
 // Dependencies:
 // 
@@ -22,33 +22,38 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module Counting_Circ_tb;
+module Count_test;
 
 	// Inputs
 	reg clk;
-	reg Ring_in;
+	reg rst_n;
 
 	// Outputs
-	wire [15:0] value_out;
+	wire [15:0] count;
 
 	// Instantiate the Unit Under Test (UUT)
-	Counting_circuit uut (
+	nBitCounter uut (
+		.count(count), 
 		.clk(clk), 
-		.Ring_in(Ring_in), 
-		.value_out(value_out)
+		.rst_n(rst_n)
 	);
 
 	initial begin
 		// Initialize Inputs
 		clk = 0;
-		Ring_in = 0;
+		rst_n = 1;
 
 		// Wait 100 ns for global reset to finish
-		#10;
-      fork  
-			repeat(500)#10 clk = ~clk;
-			repeat(1500)#3 Ring_in = ~Ring_in;
-		join
+		#100;
+        
+		repeat(101) #3 clk = ~clk;
+		#3
+		rst_n = 0;
+		#3
+		rst_n = 1;
+		#3
+		repeat(101) #3 clk = ~clk;
+
 	end
       
 endmodule

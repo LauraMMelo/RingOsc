@@ -23,6 +23,7 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Count_test_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Counter.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Counter.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Counter.lso"/>
@@ -316,26 +317,28 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493755008" xil_pn:in_ck="-8213652154416086230" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1493755007">
+    <transform xil_pn:end_ts="1493821995" xil_pn:in_ck="-8148682060351437382" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1493821995">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="BinToBCD.v"/>
+      <outfile xil_pn:name="Count_test.v"/>
       <outfile xil_pn:name="Counter.v"/>
       <outfile xil_pn:name="Counter_tb.v"/>
       <outfile xil_pn:name="Counting_Circ_tb.v"/>
       <outfile xil_pn:name="Counting_circuit.v"/>
+      <outfile xil_pn:name="DisplayController.v"/>
       <outfile xil_pn:name="LUTSel.v"/>
       <outfile xil_pn:name="RingOsc1.v"/>
       <outfile xil_pn:name="RingOscillator.v"/>
       <outfile xil_pn:name="Top.v"/>
       <outfile xil_pn:name="Top_tb.v"/>
-      <outfile xil_pn:name="counter_test.v"/>
       <outfile xil_pn:name="inverter.v"/>
     </transform>
-    <transform xil_pn:end_ts="1493749449" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8352276514417746835" xil_pn:start_ts="1493749449">
+    <transform xil_pn:end_ts="1493821882" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8352276514417746835" xil_pn:start_ts="1493821882">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493749449" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6073263566087617899" xil_pn:start_ts="1493749449">
+    <transform xil_pn:end_ts="1493821882" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6073263566087617899" xil_pn:start_ts="1493821882">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -343,22 +346,24 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493755008" xil_pn:in_ck="-8213652154416086230" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1493755008">
+    <transform xil_pn:end_ts="1493821995" xil_pn:in_ck="-8148682060351437382" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1493821995">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="BinToBCD.v"/>
+      <outfile xil_pn:name="Count_test.v"/>
       <outfile xil_pn:name="Counter.v"/>
       <outfile xil_pn:name="Counter_tb.v"/>
       <outfile xil_pn:name="Counting_Circ_tb.v"/>
       <outfile xil_pn:name="Counting_circuit.v"/>
+      <outfile xil_pn:name="DisplayController.v"/>
       <outfile xil_pn:name="LUTSel.v"/>
       <outfile xil_pn:name="RingOsc1.v"/>
       <outfile xil_pn:name="RingOscillator.v"/>
       <outfile xil_pn:name="Top.v"/>
       <outfile xil_pn:name="Top_tb.v"/>
-      <outfile xil_pn:name="counter_test.v"/>
       <outfile xil_pn:name="inverter.v"/>
     </transform>
-    <transform xil_pn:end_ts="1493755013" xil_pn:in_ck="-8213652154416086230" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8579658552736909433" xil_pn:start_ts="1493755008">
+    <transform xil_pn:end_ts="1493822000" xil_pn:in_ck="-8148682060351437382" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8579658552736909433" xil_pn:start_ts="1493821995">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -370,7 +375,7 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1493755013" xil_pn:in_ck="4706659130540609090" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6381435217384071690" xil_pn:start_ts="1493755013">
+    <transform xil_pn:end_ts="1493827721" xil_pn:in_ck="-1808673425581217991" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6381435217384071690" xil_pn:start_ts="1493827721">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -413,6 +418,7 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
@@ -432,11 +438,15 @@
     <transform xil_pn:end_ts="1493483657" xil_pn:in_ck="-3652718915549699498" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-122223062579282405" xil_pn:start_ts="1493483657">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1493751509" xil_pn:in_ck="-1219690152088699142" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7983758960604113511" xil_pn:start_ts="1493751503">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Counting_circuit.bld"/>
       <outfile xil_pn:name="Counting_circuit.ngd"/>
       <outfile xil_pn:name="Counting_circuit_ngdbuild.xrpt"/>
@@ -446,7 +456,9 @@
     <transform xil_pn:end_ts="1493751515" xil_pn:in_ck="8904958460825883476" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="4434801857544382025" xil_pn:start_ts="1493751509">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Counting_circuit.pcf"/>
       <outfile xil_pn:name="Counting_circuit_map.map"/>
       <outfile xil_pn:name="Counting_circuit_map.mrp"/>
@@ -460,7 +472,9 @@
     <transform xil_pn:end_ts="1493751529" xil_pn:in_ck="2608771755891176124" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1493751515">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Counting_circuit.ncd"/>
       <outfile xil_pn:name="Counting_circuit.pad"/>
       <outfile xil_pn:name="Counting_circuit.par"/>
@@ -475,7 +489,9 @@
     <transform xil_pn:end_ts="1493751529" xil_pn:in_ck="-552936953660923212" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1493751526">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Counting_circuit.twr"/>
       <outfile xil_pn:name="Counting_circuit.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

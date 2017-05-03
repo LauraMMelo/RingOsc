@@ -29,7 +29,7 @@ module counter_test;
 	reg rst_n;
 
 	// Outputs
-	wire [7:0] count;
+	wire [15:0] count;
 
 	// Instantiate the Unit Under Test (UUT)
 	nBitCounter uut (

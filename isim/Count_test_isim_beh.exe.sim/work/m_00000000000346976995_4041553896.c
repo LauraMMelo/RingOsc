@@ -134,6 +134,6 @@ LAB9:    xsi_set_current_line(36, ng0);
 extern void work_m_00000000000346976995_4041553896_init()
 {
 	static char *pe[] = {(void *)Initial_30_0,(void *)Always_34_1};
-	xsi_register_didat("work_m_00000000000346976995_4041553896", "isim/Counting_Circ_tb_isim_beh.exe.sim/work/m_00000000000346976995_4041553896.didat");
+	xsi_register_didat("work_m_00000000000346976995_4041553896", "isim/Count_test_isim_beh.exe.sim/work/m_00000000000346976995_4041553896.didat");
 	xsi_register_executes(pe);
 }

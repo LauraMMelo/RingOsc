@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module nBitCounter(count, clk, rst_n);
-  parameter n = 7;
+  parameter n = 15;
  
   output reg [n:0] count;
   input clk;

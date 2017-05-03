@@ -24,7 +24,7 @@
 static const char *ng0 = "C:/Users/Saulo/Documents/RingOsc/Counting_Circ_tb.v";
 static int ng1[] = {0, 0};
 static int ng2[] = {500, 0};
-static int ng3[] = {250, 0};
+static int ng3[] = {1500, 0};
 
 
 
@@ -173,7 +173,7 @@ LAB5:    t2 = (t0 + 1768);
 
 LAB7:    xsi_set_current_line(49, ng0);
     t11 = (t0 + 2744);
-    xsi_process_wait(t11, 5000LL);
+    xsi_process_wait(t11, 10000LL);
     *((char **)t1) = &&LAB9;
     goto LAB1;
 
@@ -305,7 +305,7 @@ LAB5:    t2 = (t0 + 1768);
 
 LAB7:    xsi_set_current_line(50, ng0);
     t11 = (t0 + 2992);
-    xsi_process_wait(t11, 10000LL);
+    xsi_process_wait(t11, 3000LL);
     *((char **)t1) = &&LAB9;
     goto LAB1;
 
