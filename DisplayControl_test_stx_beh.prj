@@ -1,0 +1,3 @@
+verilog isim_temp "DisplayController.v"
+verilog isim_temp "DisplayControl_test.v"
+verilog isim_temp "F:/14.7/ISE_DS/ISE//verilog/src/glbl.v"

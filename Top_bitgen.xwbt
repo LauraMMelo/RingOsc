@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Saulo\Documents\RingOsc\Top.ncd
+OUTFILE=C:\Users\Saulo\Documents\RingOsc\Top.bit
+FAMILY=Spartan3E
+PART=xc3s250e-4tq144
+WORKINGDIR=C:\Users\Saulo\Documents\RingOsc
+LICENSE=WebPack
+USER_INFO=211320707_0_0_579

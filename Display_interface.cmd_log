@@ -1,0 +1,87 @@
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 Display_interface.ngc Display_interface.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Display_interface_map.ncd Display_interface.ngd Display_interface.pcf 
+par -w -intstyle ise -ol high -t 1 Display_interface_map.ncd Display_interface.ncd Display_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_interface.twx Display_interface.ncd -o Display_interface.twr Display_interface.pcf 
+bitgen -intstyle ise -f Display_interface.ut Display_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 Display_interface.ngc Display_interface.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Display_interface_map.ncd Display_interface.ngd Display_interface.pcf 
+par -w -intstyle ise -ol high -t 1 Display_interface_map.ncd Display_interface.ncd Display_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_interface.twx Display_interface.ncd -o Display_interface.twr Display_interface.pcf 
+bitgen -intstyle ise -f Display_interface.ut Display_interface.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 Display_interface.ngc Display_interface.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Display_interface_map.ncd Display_interface.ngd Display_interface.pcf 
+par -w -intstyle ise -ol high -t 1 Display_interface_map.ncd Display_interface.ncd Display_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_interface.twx Display_interface.ncd -o Display_interface.twr Display_interface.pcf 
+bitgen -intstyle ise -f Display_interface.ut Display_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 Display_interface.ngc Display_interface.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Display_interface_map.ncd Display_interface.ngd Display_interface.pcf 
+par -w -intstyle ise -ol high -t 1 Display_interface_map.ncd Display_interface.ncd Display_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_interface.twx Display_interface.ncd -o Display_interface.twr Display_interface.pcf 
+bitgen -intstyle ise -f Display_interface.ut Display_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 Display_interface.ngc Display_interface.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Display_interface_map.ncd Display_interface.ngd Display_interface.pcf 
+par -w -intstyle ise -ol high -t 1 Display_interface_map.ncd Display_interface.ncd Display_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_interface.twx Display_interface.ncd -o Display_interface.twr Display_interface.pcf 
+bitgen -intstyle ise -f Display_interface.ut Display_interface.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 Display_interface.ngc Display_interface.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Display_interface_map.ncd Display_interface.ngd Display_interface.pcf 
+par -w -intstyle ise -ol high -t 1 Display_interface_map.ncd Display_interface.ncd Display_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_interface.twx Display_interface.ncd -o Display_interface.twr Display_interface.pcf 
+bitgen -intstyle ise -f Display_interface.ut Display_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc3s250e-tq144-4 Display_interface.ngc Display_interface.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc3s250e-tq144-4 Display_interface.ngc Display_interface.ngd  
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc3s250e-tq144-4 Display_interface.ngc Display_interface.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Display_interface_map.ncd Display_interface.ngd Display_interface.pcf 
+par -w -intstyle ise -ol high -t 1 Display_interface_map.ncd Display_interface.ncd Display_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_interface.twx Display_interface.ncd -o Display_interface.twr Display_interface.pcf -ucf test.ucf 
+bitgen -intstyle ise -f Display_interface.ut Display_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc3s250e-tq144-4 Display_interface.ngc Display_interface.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Display_interface_map.ncd Display_interface.ngd Display_interface.pcf 
+par -w -intstyle ise -ol high -t 1 Display_interface_map.ncd Display_interface.ncd Display_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_interface.twx Display_interface.ncd -o Display_interface.twr Display_interface.pcf -ucf test.ucf 
+bitgen -intstyle ise -f Display_interface.ut Display_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc3s250e-tq144-4 Display_interface.ngc Display_interface.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Display_interface_map.ncd Display_interface.ngd Display_interface.pcf 
+par -w -intstyle ise -ol high -t 1 Display_interface_map.ncd Display_interface.ncd Display_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_interface.twx Display_interface.ncd -o Display_interface.twr Display_interface.pcf -ucf test.ucf 
+bitgen -intstyle ise -f Display_interface.ut Display_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc3s250e-tq144-4 Display_interface.ngc Display_interface.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Display_interface_map.ncd Display_interface.ngd Display_interface.pcf 
+par -w -intstyle ise -ol high -t 1 Display_interface_map.ncd Display_interface.ncd Display_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_interface.twx Display_interface.ncd -o Display_interface.twr Display_interface.pcf -ucf test.ucf 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Display_interface.ngc Display_interface_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc3s250e-tq144-4 Display_interface.ngc Display_interface.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Display_interface_map.ncd Display_interface.ngd Display_interface.pcf 
+par -w -intstyle ise -ol high -t 1 Display_interface_map.ncd Display_interface.ncd Display_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_interface.twx Display_interface.ncd -o Display_interface.twr Display_interface.pcf -ucf test.ucf 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc3s250e-tq144-4 Display_interface.ngc Display_interface.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Display_interface_map.ncd Display_interface.ngd Display_interface.pcf 
+par -w -intstyle ise -ol high -t 1 Display_interface_map.ncd Display_interface.ncd Display_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_interface.twx Display_interface.ncd -o Display_interface.twr Display_interface.pcf -ucf test.ucf 
+bitgen -intstyle ise -f Display_interface.ut Display_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc3s250e-tq144-4 Display_interface.ngc Display_interface.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Display_interface_map.ncd Display_interface.ngd Display_interface.pcf 
+par -w -intstyle ise -ol high -t 1 Display_interface_map.ncd Display_interface.ncd Display_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_interface.twx Display_interface.ncd -o Display_interface.twr Display_interface.pcf -ucf test.ucf 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Display_interface.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Display_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc3s250e-tq144-4 Display_interface.ngc Display_interface.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Display_interface_map.ncd Display_interface.ngd Display_interface.pcf 
+par -w -intstyle ise -ol high -t 1 Display_interface_map.ncd Display_interface.ncd Display_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_interface.twx Display_interface.ncd -o Display_interface.twr Display_interface.pcf -ucf test.ucf 

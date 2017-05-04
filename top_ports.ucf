@@ -1,9 +1,9 @@
- NET "fpga_clk1"      LOC = "P54"; # Bank = 2,  Pin name = IO_L5N_2/D3/GCLK31, Sch name = CLK1
+ NET "clk"      LOC = "P54"; # Bank = 2,  Pin name = IO_L5N_2/D3/GCLK31, Sch name = CLK1
 #NET "Clk2"      LOC = "P54"; # Bank = 2,  Pin name = IO_L5P_2/D4/GCLK30, Sch name = CLK2
 #NET "lut_end" XBLKNM=CRIT_WIRE;
 
-NET "fpga_clk1" TNM_NET = fpga_clk1;
-TIMESPEC TS_fpga_clk1 = PERIOD "fpga_clk1" 40 ns HIGH 50%;
+//NET "clk" TNM_NET = fpga_clk1;
+//TIMESPEC TS_fpga_clk1 = PERIOD "fpga_clk1" 40 ns HIGH 50%;
                                                                                                                         
 # onBoard 7seg display                                                                                                                        
  NET "seg0"    LOC = "P25"; # Bank = 3, Pin name = IO_L8P_3,            Sch name = CA
@@ -20,7 +20,7 @@ TIMESPEC TS_fpga_clk1 = PERIOD "fpga_clk1" 40 ns HIGH 50%;
  NET "an3"     LOC = "P26"; # Bank = 3, Pin name = IO_L8N_3,            Sch name = AN4
 
 #  Leds                                                                                                                        
- NET "led0"    LOC = "P15"; # Bank = 3, Pin name = IO_L4N_3/GCLK21      Sch name = LD0
+// NET "led0"    LOC = "P15"; # Bank = 3, Pin name = IO_L4N_3/GCLK21      Sch name = LD0
 # NET "clk1_lock"    LOC = "P14"; # Bank = 3, Pin name = IO_L4P_3/GCLK20      Sch name = LD1
 # NET "clk2_lock"    LOC = "P8";  # Bank = 3, Pin name = IO_L3N_3,            Sch name = LD2
 # NET "Led<3>"    LOC = "P7";  # Bank = 3, Pin name = IO_L3P_3,            Sch name = LD3

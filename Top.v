@@ -18,12 +18,26 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Top(clk, Mode, Stress, OUT);
+module Top(clk, Mode, Stress, seg0,seg1,seg2,seg3,seg4,seg5,seg6,dp,an0,an1,an2,an3);
 	input clk, Mode, Stress;
-	output OUT;
+	output seg0,seg1,seg2,seg3,seg4,seg5,seg6,dp,an0,an1,an2,an3;
+	wire ring_out;
+	wire [15:0] value;
 	
-	RingOsc2 Ring(.Mode(Mode), .Stress(Stress), .OUT(OUT));
-	nBitCounter Count(count, clk, rst_n);
+	RingOsc2 RingOscillator(.Mode(Mode), .Stress(Stress), .OUT(ring_out));
+	
+	Counting_circuit Counter(.clk(clk), .Ring_in(ring_out), .value_out(value));
+	
+	Display_interface Display(.clk(clk), .value(value),
+										.seg0(seg0),
+										.seg1(seg1),
+										.seg2(seg2),
+										.seg3(seg3),
+										.seg4(seg4),
+										.seg5(seg5),
+										.seg6(seg6),
+										.dp(dp),.an0(an0),.an1(an1),.an2(an2),.an3(an3));
+	
 	
 	
 	

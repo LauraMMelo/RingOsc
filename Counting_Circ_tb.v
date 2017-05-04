@@ -44,10 +44,10 @@ module Counting_Circ_tb;
 		Ring_in = 0;
 
 		// Wait 100 ns for global reset to finish
-		#10;
+		
       fork  
 			repeat(500)#10 clk = ~clk;
-			repeat(1500)#3 Ring_in = ~Ring_in;
+			repeat(500)#8 Ring_in = ~Ring_in;
 		join
 	end
       

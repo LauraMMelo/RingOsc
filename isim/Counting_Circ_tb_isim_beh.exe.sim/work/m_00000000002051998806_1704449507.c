@@ -24,7 +24,6 @@
 static const char *ng0 = "C:/Users/Saulo/Documents/RingOsc/Counting_Circ_tb.v";
 static int ng1[] = {0, 0};
 static int ng2[] = {500, 0};
-static int ng3[] = {1500, 0};
 
 
 
@@ -61,13 +60,7 @@ LAB4:    xsi_set_current_line(43, ng0);
     t2 = ((char*)((ng1)));
     t3 = (t0 + 1608);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
-    xsi_set_current_line(47, ng0);
-    t2 = (t0 + 2496);
-    xsi_process_wait(t2, 10000LL);
-    *((char **)t1) = &&LAB5;
-
-LAB1:    return;
-LAB5:    xsi_set_current_line(48, ng0);
+    xsi_set_current_line(48, ng0);
     t2 = (t0 + 2744);
     t3 = (t0 + 2496);
     xsi_add_process_toexecute(0, t2, t3);
@@ -80,20 +73,20 @@ LAB5:    xsi_set_current_line(48, ng0);
     xsi_vlogvar_assign_value(t6, t7, 0, 0, 32);
     t8 = (t0 + 3504);
     *((int *)t8) = 1;
-    *((char **)t1) = &&LAB6;
-    goto LAB1;
+    *((char **)t1) = &&LAB5;
 
-LAB6:    t9 = (t0 + 1768);
+LAB1:    return;
+LAB5:    t9 = (t0 + 1768);
     t10 = (t9 + 56U);
     t11 = *((char **)t10);
     if (*((int *)t11) > 0)
-        goto LAB7;
+        goto LAB6;
 
-LAB8:    t13 = (t0 + 2496);
+LAB7:    t13 = (t0 + 2496);
     xsi_clean_active_fork_process_list(t13);
     goto LAB1;
 
-LAB7:    t12 = (t0 + 3504);
+LAB6:    t12 = (t0 + 3504);
     *((int *)t12) = 1;
     goto LAB1;
 
@@ -154,10 +147,10 @@ LAB4:    t2 = (t0 + 2744);
     t6 = (~(t5));
     t7 = *((unsigned int *)t3);
     t8 = (t7 & t6);
-    t9 = (t0 + 5076);
+    t9 = (t0 + 5072);
     *((int *)t9) = t8;
 
-LAB6:    t10 = (t0 + 5076);
+LAB6:    t10 = (t0 + 5072);
     if (*((int *)t10) > 0)
         goto LAB7;
 
@@ -213,7 +206,7 @@ LAB14:    t31 = *((unsigned int *)t12);
     *((unsigned int *)t23) = (t32 & 1U);
     t33 = (t0 + 1448);
     xsi_vlogvar_assign_value(t33, t12, 0, 0, 1);
-    t2 = (t0 + 5076);
+    t2 = (t0 + 5072);
     t8 = *((int *)t2);
     *((int *)t2) = (t8 - 1);
     goto LAB6;
@@ -280,16 +273,16 @@ LAB1:    return;
 LAB4:    t2 = (t0 + 2992);
     xsi_vlog_process_setdisablestate(t2, &&LAB5);
     xsi_set_current_line(50, ng0);
-    t3 = ((char*)((ng3)));
+    t3 = ((char*)((ng2)));
     t4 = (t3 + 4);
     t5 = *((unsigned int *)t4);
     t6 = (~(t5));
     t7 = *((unsigned int *)t3);
     t8 = (t7 & t6);
-    t9 = (t0 + 5080);
+    t9 = (t0 + 5076);
     *((int *)t9) = t8;
 
-LAB6:    t10 = (t0 + 5080);
+LAB6:    t10 = (t0 + 5076);
     if (*((int *)t10) > 0)
         goto LAB7;
 
@@ -305,7 +298,7 @@ LAB5:    t2 = (t0 + 1768);
 
 LAB7:    xsi_set_current_line(50, ng0);
     t11 = (t0 + 2992);
-    xsi_process_wait(t11, 3000LL);
+    xsi_process_wait(t11, 8000LL);
     *((char **)t1) = &&LAB9;
     goto LAB1;
 
@@ -345,7 +338,7 @@ LAB14:    t31 = *((unsigned int *)t12);
     *((unsigned int *)t23) = (t32 & 1U);
     t33 = (t0 + 1608);
     xsi_vlogvar_assign_value(t33, t12, 0, 0, 1);
-    t2 = (t0 + 5080);
+    t2 = (t0 + 5076);
     t8 = *((int *)t2);
     *((int *)t2) = (t8 - 1);
     goto LAB6;

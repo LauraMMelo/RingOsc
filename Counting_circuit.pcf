@@ -1,8 +1,9 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue May 02 15:58:33 2017
+// Written by: Map P.20131013 on Wed May 03 13:18:29 2017
 //! **************************************************************************
 
 SCHEMATIC START;
+NET "Ring_in_BUFGP/IBUFG" BEL "Ring_in_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 SCHEMATIC END;
 

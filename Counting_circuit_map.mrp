@@ -9,33 +9,33 @@ Target Device  : xc3s250e
 Target Package : tq144
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue May 02 15:58:31 2017
+Mapped Date    : Wed May 03 13:18:27 2017
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:            10 out of   4,896    1%
-  Number of 4 input LUTs:                 4 out of   4,896    1%
+  Number of Slice Flip Flops:            32 out of   4,896    1%
+  Number of 4 input LUTs:                23 out of   4,896    1%
 Logic Distribution:
-  Number of occupied Slices:              8 out of   2,448    1%
-    Number of Slices containing only related logic:       8 out of       8 100%
-    Number of Slices containing unrelated logic:          0 out of       8   0%
+  Number of occupied Slices:             27 out of   2,448    1%
+    Number of Slices containing only related logic:      27 out of      27 100%
+    Number of Slices containing unrelated logic:          0 out of      27   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:          11 out of   4,896    1%
-    Number used as logic:                 4
-    Number used as a route-thru:          7
+  Total Number of 4 input LUTs:          54 out of   4,896    1%
+    Number used as logic:                23
+    Number used as a route-thru:         31
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                  9 out of     108    8%
-  Number of BUFGMUXs:                     1 out of      24    4%
+  Number of bonded IOBs:                 18 out of     108   16%
+  Number of BUFGMUXs:                     2 out of      24    8%
 
-Average Fanout of Non-Clock Nets:                2.50
+Average Fanout of Non-Clock Nets:                2.18
 
-Peak Memory Usage:  307 MB
+Peak Memory Usage:  305 MB
 Total REAL time to MAP completion:  2 secs 
 Total CPU time to MAP completion:   2 secs 
 
@@ -81,7 +81,6 @@ Section 2 - Warnings
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network Ring_in has no load.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs
@@ -109,6 +108,7 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Ring_in                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | clk                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | value_out<0>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | value_out<1>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
@@ -118,6 +118,14 @@ Section 6 - IOB Properties
 | value_out<5>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | value_out<6>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | value_out<7>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| value_out<8>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| value_out<9>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| value_out<10>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| value_out<11>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| value_out<12>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| value_out<13>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| value_out<14>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| value_out<15>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

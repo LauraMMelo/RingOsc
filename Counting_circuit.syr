@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Reading design: Counting_circuit.prj
 
@@ -119,7 +119,7 @@ Analyzing hierarchy for module <Counting_circuit> in library <work> with paramet
 	max = "00000000000000000000000001100100"
 
 Analyzing hierarchy for module <nBitCounter> in library <work> with parameters.
-	n = "00000000000000000000000000000111"
+	n = "00000000000000000000000000001111"
 
 
 =========================================================================
@@ -130,7 +130,7 @@ Analyzing top module <Counting_circuit>.
 Module <Counting_circuit> is correct for synthesis.
  
 Analyzing module <nBitCounter> in library <work>.
-	n = 32'sb00000000000000000000000000000111
+	n = 32'sb00000000000000000000000000001111
 Module <nBitCounter> is correct for synthesis.
  
 
@@ -142,7 +142,7 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <nBitCounter>.
     Related source file is "Counter.v".
-    Found 8-bit up counter for signal <count>.
+    Found 16-bit up counter for signal <count>.
     Summary:
 	inferred   1 Counter(s).
 Unit <nBitCounter> synthesized.
@@ -150,30 +150,21 @@ Unit <nBitCounter> synthesized.
 
 Synthesizing Unit <Counting_circuit>.
     Related source file is "Counting_circuit.v".
-WARNING:Xst:646 - Signal <ring_value> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <reset> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-    Found 8-bit register for signal <value_out>.
-    Found 1-bit register for signal <rst>.
-    Found 8-bit comparator less for signal <value_out$cmp_lt0000> created at line 36.
+    Found 16-bit comparator less for signal <value_out$cmp_lt0000> created at line 36.
     Summary:
-	inferred   9 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 Unit <Counting_circuit> synthesized.
 
-WARNING:Xst:524 - All outputs of the instance <Counter2> of the block <nBitCounter> are unconnected in block <Counting_circuit>.
-   This instance will be removed from the design along with all underlying logic
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Counters                                             : 1
- 8-bit up counter                                      : 1
-# Registers                                            : 2
- 1-bit register                                        : 1
- 8-bit register                                        : 1
+# Counters                                             : 2
+ 16-bit up counter                                     : 2
 # Comparators                                          : 1
- 8-bit comparator less                                 : 1
+ 16-bit comparator less                                : 1
 
 =========================================================================
 
@@ -186,25 +177,22 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Counters                                             : 1
- 8-bit up counter                                      : 1
-# Registers                                            : 9
- Flip-Flops                                            : 9
+# Counters                                             : 2
+ 16-bit up counter                                     : 2
 # Comparators                                          : 1
- 8-bit comparator less                                 : 1
+ 16-bit comparator less                                : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <value_out_0> in Unit <Counting_circuit> is equivalent to the following 7 FFs/Latches, which will be removed : <value_out_1> <value_out_2> <value_out_3> <value_out_4> <value_out_5> <value_out_6> <value_out_7> 
 
 Optimizing unit <Counting_circuit> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Counting_circuit, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block Counting_circuit, actual ratio is 1.
 
 Final Macro Processing ...
 
@@ -212,8 +200,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 10
- Flip-Flops                                            : 10
+# Registers                                            : 32
+ Flip-Flops                                            : 32
 
 =========================================================================
 
@@ -239,25 +227,24 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 10
+# IOs                              : 18
 
 Cell Usage :
-# BELS                             : 29
+# BELS                             : 124
 #      GND                         : 1
-#      INV                         : 2
-#      LUT1                        : 7
-#      LUT3_D                      : 1
+#      INV                         : 3
+#      LUT1                        : 31
+#      LUT2                        : 18
 #      LUT4                        : 2
-#      MUXCY                       : 7
+#      MUXCY                       : 36
 #      VCC                         : 1
-#      XORCY                       : 8
-# FlipFlops/Latches                : 10
-#      FDC                         : 8
-#      FDR                         : 2
-# Clock Buffers                    : 1
-#      BUFGP                       : 1
-# IO Buffers                       : 8
-#      OBUF                        : 8
+#      XORCY                       : 32
+# FlipFlops/Latches                : 32
+#      FDC                         : 32
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 16
+#      OBUF                        : 16
 =========================================================================
 
 Device utilization summary:
@@ -265,12 +252,12 @@ Device utilization summary:
 
 Selected Device : 3s250etq144-4 
 
- Number of Slices:                        8  out of   2448     0%  
- Number of Slice Flip Flops:             10  out of   4896     0%  
- Number of 4 input LUTs:                 12  out of   4896     0%  
- Number of IOs:                          10
- Number of bonded IOBs:                   9  out of    108     8%  
- Number of GCLKs:                         1  out of     24     4%  
+ Number of Slices:                       28  out of   2448     1%  
+ Number of Slice Flip Flops:             32  out of   4896     0%  
+ Number of 4 input LUTs:                 54  out of   4896     1%  
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    108    16%  
+ Number of GCLKs:                         2  out of     24     8%  
 
 ---------------------------
 Partition Resource Summary:
@@ -293,24 +280,25 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 10    |
+Ring_in                            | BUFGP                  | 16    |
+clk                                | BUFGP                  | 16    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
------------------------------------+------------------------+-------+
-Control Signal                     | Buffer(FF name)        | Load  |
------------------------------------+------------------------+-------+
-rst_inv(rst_inv1_INV_0:O)          | NONE(Counter1/count_0) | 8     |
------------------------------------+------------------------+-------+
+------------------------------------------------------------------------+------------------------+-------+
+Control Signal                                                          | Buffer(FF name)        | Load  |
+------------------------------------------------------------------------+------------------------+-------+
+Mcompar_value_out_cmp_lt0000_cy<5>(Mcompar_value_out_cmp_lt0000_cy<5>:O)| NONE(Counter1/count_0) | 32    |
+------------------------------------------------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 4.376ns (Maximum Frequency: 228.519MHz)
+   Minimum period: 4.260ns (Maximum Frequency: 234.742MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 4.620ns
+   Maximum output required time after clock: 8.786ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -318,58 +306,137 @@ Timing Detail:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.376ns (frequency: 228.519MHz)
-  Total number of paths / destination ports: 48 / 10
+Timing constraint: Default period analysis for Clock 'Ring_in'
+  Clock period: 4.260ns (frequency: 234.742MHz)
+  Total number of paths / destination ports: 136 / 16
 -------------------------------------------------------------------------
-Delay:               4.376ns (Levels of Logic = 2)
-  Source:            Counter1/count_3 (FF)
-  Destination:       rst (FF)
+Delay:               4.260ns (Levels of Logic = 16)
+  Source:            Counter2/count_1 (FF)
+  Destination:       Counter2/count_15 (FF)
+  Source Clock:      Ring_in rising
+  Destination Clock: Ring_in rising
+
+  Data Path: Counter2/count_1 to Counter2/count_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  Counter2/count_1 (Counter2/count_1)
+     LUT1:I0->O            1   0.704   0.000  Counter2/Mcount_count_cy<1>_rt (Counter2/Mcount_count_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  Counter2/Mcount_count_cy<1> (Counter2/Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Counter2/Mcount_count_cy<2> (Counter2/Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Counter2/Mcount_count_cy<3> (Counter2/Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Counter2/Mcount_count_cy<4> (Counter2/Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Counter2/Mcount_count_cy<5> (Counter2/Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Counter2/Mcount_count_cy<6> (Counter2/Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Counter2/Mcount_count_cy<7> (Counter2/Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Counter2/Mcount_count_cy<8> (Counter2/Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Counter2/Mcount_count_cy<9> (Counter2/Mcount_count_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Counter2/Mcount_count_cy<10> (Counter2/Mcount_count_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Counter2/Mcount_count_cy<11> (Counter2/Mcount_count_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Counter2/Mcount_count_cy<12> (Counter2/Mcount_count_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Counter2/Mcount_count_cy<13> (Counter2/Mcount_count_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  Counter2/Mcount_count_cy<14> (Counter2/Mcount_count_cy<14>)
+     XORCY:CI->O           1   0.804   0.000  Counter2/Mcount_count_xor<15> (Result<15>1)
+     FDC:D                     0.308          Counter2/count_15
+    ----------------------------------------
+    Total                      4.260ns (3.638ns logic, 0.622ns route)
+                                       (85.4% logic, 14.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.233ns (frequency: 236.239MHz)
+  Total number of paths / destination ports: 136 / 16
+-------------------------------------------------------------------------
+Delay:               4.233ns (Levels of Logic = 16)
+  Source:            Counter1/count_1 (FF)
+  Destination:       Counter1/count_15 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: Counter1/count_3 to rst
+  Data Path: Counter1/count_1 to Counter1/count_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.591   0.622  Counter1/count_3 (Counter1/count_3)
-     LUT3_D:I0->O          1   0.704   0.424  value_out_cmp_lt00001_SW0 (N11)
-     LUT4:I3->O            1   0.704   0.420  rst_not00011 (rst_not0001)
-     FDR:R                     0.911          rst
+     FDC:C->Q              1   0.591   0.595  Counter1/count_1 (Counter1/count_1)
+     LUT1:I0->O            1   0.704   0.000  Counter1/Mcount_count_cy<1>_rt (Counter1/Mcount_count_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  Counter1/Mcount_count_cy<1> (Counter1/Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Counter1/Mcount_count_cy<2> (Counter1/Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Counter1/Mcount_count_cy<3> (Counter1/Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Counter1/Mcount_count_cy<4> (Counter1/Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Counter1/Mcount_count_cy<5> (Counter1/Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Counter1/Mcount_count_cy<6> (Counter1/Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Counter1/Mcount_count_cy<7> (Counter1/Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Counter1/Mcount_count_cy<8> (Counter1/Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Counter1/Mcount_count_cy<9> (Counter1/Mcount_count_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Counter1/Mcount_count_cy<10> (Counter1/Mcount_count_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Counter1/Mcount_count_cy<11> (Counter1/Mcount_count_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Counter1/Mcount_count_cy<12> (Counter1/Mcount_count_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Counter1/Mcount_count_cy<13> (Counter1/Mcount_count_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  Counter1/Mcount_count_cy<14> (Counter1/Mcount_count_cy<14>)
+     XORCY:CI->O           1   0.804   0.000  Counter1/Mcount_count_xor<15> (Result<15>)
+     FDC:D                     0.308          Counter1/count_15
     ----------------------------------------
-    Total                      4.376ns (2.910ns logic, 1.466ns route)
-                                       (66.5% logic, 33.5% route)
+    Total                      4.233ns (3.638ns logic, 0.595ns route)
+                                       (85.9% logic, 14.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 8 / 8
+  Total number of paths / destination ports: 224 / 16
 -------------------------------------------------------------------------
-Offset:              4.620ns (Levels of Logic = 1)
-  Source:            value_out_0 (FF)
-  Destination:       value_out<7> (PAD)
+Offset:              8.786ns (Levels of Logic = 9)
+  Source:            Counter1/count_2 (FF)
+  Destination:       value_out<15> (PAD)
   Source Clock:      clk rising
 
-  Data Path: value_out_0 to value_out<7>
+  Data Path: Counter1/count_2 to value_out<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              8   0.591   0.757  value_out_0 (value_out_0)
-     OBUF:I->O                 3.272          value_out_7_OBUF (value_out<7>)
+     FDC:C->Q              2   0.591   0.622  Counter1/count_2 (Counter1/count_2)
+     LUT1:I0->O            1   0.704   0.000  Mcompar_value_out_cmp_lt0000_cy<0>_rt (Mcompar_value_out_cmp_lt0000_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_value_out_cmp_lt0000_cy<0> (Mcompar_value_out_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_value_out_cmp_lt0000_cy<1> (Mcompar_value_out_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_value_out_cmp_lt0000_cy<2> (Mcompar_value_out_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_value_out_cmp_lt0000_cy<3> (Mcompar_value_out_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_value_out_cmp_lt0000_cy<4> (Mcompar_value_out_cmp_lt0000_cy<4>)
+     MUXCY:CI->O          48   0.331   1.442  Mcompar_value_out_cmp_lt0000_cy<5> (Mcompar_value_out_cmp_lt0000_cy<5>)
+     LUT2:I0->O            1   0.704   0.420  value_out<9>1 (value_out_9_OBUF)
+     OBUF:I->O                 3.272          value_out_9_OBUF (value_out<9>)
     ----------------------------------------
-    Total                      4.620ns (3.863ns logic, 0.757ns route)
-                                       (83.6% logic, 16.4% route)
+    Total                      8.786ns (6.302ns logic, 2.484ns route)
+                                       (71.7% logic, 28.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Ring_in'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              5.513ns (Levels of Logic = 2)
+  Source:            Counter2/count_15 (FF)
+  Destination:       value_out<15> (PAD)
+  Source Clock:      Ring_in rising
+
+  Data Path: Counter2/count_15 to value_out<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.526  Counter2/count_15 (Counter2/count_15)
+     LUT2:I1->O            1   0.704   0.420  value_out<15>1 (value_out_15_OBUF)
+     OBUF:I->O                 3.272          value_out_15_OBUF (value_out<15>)
+    ----------------------------------------
+    Total                      5.513ns (4.567ns logic, 0.946ns route)
+                                       (82.8% logic, 17.2% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.19 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.68 secs
  
 --> 
 
-Total memory usage is 254860 kilobytes
+Total memory usage is 254732 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    3 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 

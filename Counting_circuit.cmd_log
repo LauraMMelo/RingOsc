@@ -38,3 +38,8 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 Counting_ci
 map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counting_circuit_map.ncd Counting_circuit.ngd Counting_circuit.pcf 
 par -w -intstyle ise -ol high -t 1 Counting_circuit_map.ncd Counting_circuit.ncd Counting_circuit.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counting_circuit.twx Counting_circuit.ncd -o Counting_circuit.twr Counting_circuit.pcf 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/RingOsc/Counting_circuit.xst" -ofn "C:/Users/Saulo/Documents/RingOsc/Counting_circuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 Counting_circuit.ngc Counting_circuit.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Counting_circuit_map.ncd Counting_circuit.ngd Counting_circuit.pcf 
+par -w -intstyle ise -ol high -t 1 Counting_circuit_map.ncd Counting_circuit.ncd Counting_circuit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Counting_circuit.twx Counting_circuit.ncd -o Counting_circuit.twr Counting_circuit.pcf 

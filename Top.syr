@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Reading design: Top.prj
 
@@ -107,12 +107,20 @@ Slice Utilization Ratio Delta      : 5
 Compiling verilog file "LUTSel.v" in library work
 Compiling verilog file "inverter.v" in library work
 Module <LUTSel> compiled
-Compiling verilog file "RingOsc1.v" in library work
+Compiling verilog file "DisplayController.v" in library work
 Module <inverter> compiled
 Compiling verilog file "Counter.v" in library work
+Module <DisplayController> compiled
+Compiling verilog file "BinToBCD.v" in library work
+Module <nBitCounter> compiled
+Compiling verilog file "RingOsc1.v" in library work
+Module <BinToBCD> compiled
+Compiling verilog file "Display_interface.v" in library work
 Module <RingOsc2> compiled
+Compiling verilog file "Counting_circuit.v" in library work
+Module <Display_interface> compiled
 Compiling verilog file "Top.v" in library work
-Module <Counter> compiled
+Module <Counting_circuit> compiled
 Module <Top> compiled
 No errors in compilation
 Analysis of file <"Top.prj"> succeeded.
@@ -121,13 +129,532 @@ Analysis of file <"Top.prj"> succeeded.
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-ERROR:HDLCompilers:246 - "Top.v" line 32 Reference to vector reg 'out' is not a legal net lvalue
-ERROR:HDLCompilers:102 - "Top.v" line 32 Connection to output port 'out' must be a net lvalue
+Analyzing hierarchy for module <Top> in library <work>.
+
+Analyzing hierarchy for module <RingOsc2> in library <work>.
+
+Analyzing hierarchy for module <Counting_circuit> in library <work> with parameters.
+	max = "00000000000000000000000001100100"
+
+Analyzing hierarchy for module <Display_interface> in library <work>.
+
+Analyzing hierarchy for module <LUTSel> in library <work>.
+
+Analyzing hierarchy for module <inverter> in library <work>.
+
+Analyzing hierarchy for module <nBitCounter> in library <work> with parameters.
+	n = "00000000000000000000000000001111"
+
+Analyzing hierarchy for module <BinToBCD> in library <work>.
+
+Analyzing hierarchy for module <DisplayController> in library <work> with parameters.
+	N = "00000000000000000000000000010010"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Top>.
+WARNING:Xst:852 - "Top.v" line 31: Unconnected input port 'reset' of instance 'Display' is tied to GND.
+Module <Top> is correct for synthesis.
+ 
+Analyzing module <RingOsc2> in library <work>.
+Module <RingOsc2> is correct for synthesis.
+ 
+    Set user-defined property "S =  TRUE" for signal <LUTout>.
+    Set user-defined property "S =  TRUE" for signal <a>.
+    Set user-defined property "S =  TRUE" for signal <b>.
+    Set user-defined property "S =  TRUE" for signal <c>.
+    Set user-defined property "S =  TRUE" for signal <d>.
+    Set user-defined property "S =  TRUE" for signal <e>.
+Analyzing module <LUTSel> in library <work>.
+Module <LUTSel> is correct for synthesis.
+ 
+Analyzing module <inverter> in library <work>.
+Module <inverter> is correct for synthesis.
+ 
+Analyzing module <Counting_circuit> in library <work>.
+	max = 32'sb00000000000000000000000001100100
+WARNING:Xst:916 - "Counting_circuit.v" line 42: Delay is ignored for synthesis.
+Module <Counting_circuit> is correct for synthesis.
+ 
+Analyzing module <nBitCounter> in library <work>.
+	n = 32'sb00000000000000000000000000001111
+Module <nBitCounter> is correct for synthesis.
+ 
+Analyzing module <Display_interface> in library <work>.
+Module <Display_interface> is correct for synthesis.
+ 
+Analyzing module <BinToBCD> in library <work>.
+Module <BinToBCD> is correct for synthesis.
+ 
+Analyzing module <DisplayController> in library <work>.
+	N = 32'sb00000000000000000000000000010010
+Module <DisplayController> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <LUTSel>.
+    Related source file is "LUTSel.v".
+Unit <LUTSel> synthesized.
+
+
+Synthesizing Unit <inverter>.
+    Related source file is "inverter.v".
+Unit <inverter> synthesized.
+
+
+Synthesizing Unit <nBitCounter>.
+    Related source file is "Counter.v".
+    Found 16-bit up counter for signal <count>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <nBitCounter> synthesized.
+
+
+Synthesizing Unit <BinToBCD>.
+    Related source file is "BinToBCD.v".
+    Found 4-bit register for signal <un>.
+    Found 4-bit register for signal <milh>.
+    Found 4-bit register for signal <cent>.
+    Found 4-bit register for signal <dec>.
+    Found 4-bit adder for signal <$add0000> created at line 50.
+    Found 4-bit adder for signal <$add0001> created at line 50.
+    Found 4-bit adder for signal <$add0002> created at line 50.
+    Found 4-bit adder for signal <$add0003> created at line 47.
+    Found 4-bit adder for signal <$add0004> created at line 50.
+    Found 4-bit adder for signal <$add0005> created at line 47.
+    Found 4-bit adder for signal <$add0006> created at line 50.
+    Found 4-bit adder for signal <$add0007> created at line 47.
+    Found 4-bit adder for signal <$add0008> created at line 50.
+    Found 4-bit adder for signal <$add0009> created at line 44.
+    Found 4-bit adder for signal <$add0010> created at line 47.
+    Found 4-bit adder for signal <$add0011> created at line 50.
+    Found 4-bit adder for signal <$add0012> created at line 44.
+    Found 4-bit adder for signal <$add0013> created at line 47.
+    Found 4-bit adder for signal <$add0014> created at line 50.
+    Found 4-bit adder for signal <$add0015> created at line 44.
+    Found 4-bit adder for signal <$add0016> created at line 47.
+    Found 4-bit adder for signal <$add0017> created at line 50.
+    Found 4-bit adder for signal <$add0018> created at line 41.
+    Found 4-bit adder for signal <$add0019> created at line 44.
+    Found 4-bit adder for signal <$add0020> created at line 47.
+    Found 4-bit adder for signal <$add0021> created at line 50.
+    Found 4-bit adder for signal <$add0022> created at line 41.
+    Found 4-bit adder for signal <$add0023> created at line 44.
+    Found 4-bit adder for signal <$add0024> created at line 47.
+    Found 4-bit adder for signal <$add0025> created at line 50.
+    Found 4-bit adder for signal <$add0026> created at line 41.
+    Found 4-bit adder for signal <$add0027> created at line 44.
+    Found 4-bit adder for signal <$add0028> created at line 47.
+    Found 4-bit adder for signal <$add0029> created at line 50.
+    Found 4-bit adder for signal <$add0030> created at line 41.
+    Found 4-bit adder for signal <$add0031> created at line 44.
+    Found 4-bit adder for signal <$add0032> created at line 47.
+    Found 4-bit adder for signal <$add0033> created at line 50.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0000> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0001> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0002> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0003> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0004> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0005> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0006> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0007> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0008> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0009> created at line 46.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0000> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0001> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0002> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0003> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0004> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0005> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0006> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0007> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0008> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0009> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0010> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0011> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0012> created at line 49.
+    Found 4-bit comparator greatequal for signal <milh$cmp_ge0000> created at line 40.
+    Found 4-bit comparator greatequal for signal <milh$cmp_ge0001> created at line 40.
+    Found 4-bit comparator greatequal for signal <milh$cmp_ge0002> created at line 40.
+    Found 4-bit comparator greatequal for signal <milh$cmp_ge0003> created at line 40.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0000> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0001> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0002> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0003> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0004> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0005> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0006> created at line 43.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred  34 Adder/Subtractor(s).
+	inferred  34 Comparator(s).
+Unit <BinToBCD> synthesized.
+
+
+Synthesizing Unit <DisplayController>.
+    Related source file is "DisplayController.v".
+    Found 16x7-bit ROM for signal <sseg_temp>.
+    Found 1-of-4 decoder for signal <an_temp>.
+    Found 18-bit up counter for signal <count>.
+    Found 4-bit 4-to-1 multiplexer for signal <sseg>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <DisplayController> synthesized.
+
+
+Synthesizing Unit <RingOsc2>.
+    Related source file is "RingOsc1.v".
+Unit <RingOsc2> synthesized.
+
+
+Synthesizing Unit <Counting_circuit>.
+    Related source file is "Counting_circuit.v".
+WARNING:Xst:1780 - Signal <reset> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 16-bit comparator lessequal for signal <value_out$cmp_le0000> created at line 36.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Counting_circuit> synthesized.
+
+
+Synthesizing Unit <Display_interface>.
+    Related source file is "Display_interface.v".
+Unit <Display_interface> synthesized.
+
+
+Synthesizing Unit <Top>.
+    Related source file is "Top.v".
+Unit <Top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 34
+ 4-bit adder                                           : 34
+# Counters                                             : 3
+ 16-bit up counter                                     : 2
+ 18-bit up counter                                     : 1
+# Registers                                            : 16
+ 1-bit register                                        : 16
+# Comparators                                          : 35
+ 16-bit comparator lessequal                           : 1
+ 4-bit comparator greatequal                           : 34
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 34
+ 3-bit adder                                           : 4
+ 4-bit adder                                           : 30
+# Counters                                             : 3
+ 16-bit up counter                                     : 2
+ 18-bit up counter                                     : 1
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+# Comparators                                          : 35
+ 16-bit comparator lessequal                           : 1
+ 4-bit comparator greatequal                           : 34
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit Top : the following signal(s) form a combinatorial loop: ring_out, RingOscillator/c, RingOscillator/e, RingOscillator/d, RingOscillator/a, RingOscillator/LUTSel1/OUTSel_and0000, RingOscillator/b, RingOscillator/LUTout.
+
+Optimizing unit <Top> ...
+
+Optimizing unit <BinToBCD> ...
+
+Optimizing unit <Counting_circuit> ...
+WARNING:Xst:2677 - Node <Display/BinToBCD/milh_1> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Display/BinToBCD/milh_3> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Display/BinToBCD/milh_2> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Display/BinToBCD/un_1> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Display/BinToBCD/un_2> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Display/BinToBCD/dec_1> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Display/BinToBCD/un_3> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Display/BinToBCD/dec_3> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Display/BinToBCD/dec_2> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Display/BinToBCD/cent_2> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Display/BinToBCD/cent_3> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Display/BinToBCD/cent_1> of sequential type is unconnected in block <Top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 54
+ Flip-Flops                                            : 54
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Top.ngr
+Top Level Output File Name         : Top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 15
+
+Cell Usage :
+# BELS                             : 425
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 53
+#      LUT2                        : 13
+#      LUT2_D                      : 4
+#      LUT3                        : 33
+#      LUT3_D                      : 7
+#      LUT3_L                      : 3
+#      LUT4                        : 129
+#      LUT4_D                      : 40
+#      LUT4_L                      : 20
+#      MUXCY                       : 52
+#      MUXF5                       : 13
+#      VCC                         : 1
+#      XORCY                       : 50
+# FlipFlops/Latches                : 54
+#      FD                          : 21
+#      FDC                         : 32
+#      FDR                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 2
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250etq144-4 
+
+ Number of Slices:                      158  out of   2448     6%  
+ Number of Slice Flip Flops:             54  out of   4896     1%  
+ Number of 4 input LUTs:                308  out of   4896     6%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    108    13%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------+-----------------------------------+-------+
+Clock Signal                                           | Clock buffer(FF name)             | Load  |
+-------------------------------------------------------+-----------------------------------+-------+
+clk                                                    | BUFGP                             | 38    |
+RingOscillator/LUTout(RingOscillator/LUTSel1/OUTSel1:O)| NONE(*)(Counter/Counter2/count_15)| 16    |
+-------------------------------------------------------+-----------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------+-------------------------------+-------+
+Control Signal                           | Buffer(FF name)               | Load  |
+-----------------------------------------+-------------------------------+-------+
+Counter/rst_inv(Counter/rst_inv1_INV_0:O)| NONE(Counter/Counter1/count_0)| 32    |
+-----------------------------------------+-------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 27.753ns (Maximum Frequency: 36.033MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 6.358ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 27.753ns (frequency: 36.033MHz)
+  Total number of paths / destination ports: 55620339 / 38
+-------------------------------------------------------------------------
+Delay:               27.753ns (Levels of Logic = 25)
+  Source:            Counter/Counter1/count_0 (FF)
+  Destination:       Display/BinToBCD/cent_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Counter/Counter1/count_0 to Display/BinToBCD/cent_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  Counter/Counter1/count_0 (Counter/Counter1/count_0)
+     LUT2:I0->O            1   0.704   0.000  Counter/Mcompar_value_out_cmp_le0000_lut<0> (Counter/Mcompar_value_out_cmp_le0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Counter/Mcompar_value_out_cmp_le0000_cy<0> (Counter/Mcompar_value_out_cmp_le0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Counter/Mcompar_value_out_cmp_le0000_cy<1> (Counter/Mcompar_value_out_cmp_le0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Counter/Mcompar_value_out_cmp_le0000_cy<2> (Counter/Mcompar_value_out_cmp_le0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Counter/Mcompar_value_out_cmp_le0000_cy<3> (Counter/Mcompar_value_out_cmp_le0000_cy<3>)
+     MUXCY:CI->O           7   0.459   0.743  Counter/Mcompar_value_out_cmp_le0000_cy<4> (Counter/Mcompar_value_out_cmp_le0000_cy<4>)
+     LUT3:I2->O           49   0.704   1.268  Counter/Mcompar_value_out_cmp_le0000_cy<6>1 (Counter/rst)
+     MUXF5:S->O            9   0.739   0.824  Display/BinToBCD/dec_0_mux00011 (Display/BinToBCD/dec_0_mux0001)
+     LUT4_D:I3->O         12   0.704   0.965  Display/BinToBCD/dec_0_mux000211 (Display/BinToBCD/N35)
+     LUT4:I3->O            4   0.704   0.666  Display/BinToBCD/dec_0_cmp_ge00041_SW1 (N70)
+     LUT2:I1->O            1   0.704   0.000  Display/BinToBCD/dec_0_cmp_ge00041_G (N327)
+     MUXF5:I1->O          13   0.321   0.987  Display/BinToBCD/dec_0_cmp_ge00041 (Display/BinToBCD/dec_0_cmp_ge0004)
+     LUT4:I3->O            1   0.704   0.424  Display/BinToBCD/Madd__add0008_cy<1>11 (Display/BinToBCD/Madd__add0008_cy<1>)
+     LUT4:I3->O            4   0.704   0.591  Display/BinToBCD/un_mux00151 (Display/BinToBCD/Madd__add0011_lut<3>)
+     LUT4_D:I3->O          9   0.704   0.824  Display/BinToBCD/dec_0_mux00061 (Display/BinToBCD/Madd__add0013_cy<0>)
+     LUT4:I3->O            2   0.704   0.451  Display/BinToBCD/cent_0_cmp_ge00041_SW0 (N42)
+     LUT4:I3->O            6   0.704   0.704  Display/BinToBCD/cent_0_cmp_ge00041 (Display/BinToBCD/cent_0_cmp_ge0004)
+     LUT3:I2->O            2   0.704   0.482  Display/BinToBCD/Madd__add0016_cy<1>11 (Display/BinToBCD/Madd__add0016_cy<1>)
+     LUT3:I2->O            3   0.704   0.610  Display/BinToBCD/dec_mux00151 (Display/BinToBCD/Madd__add0020_lut<3>)
+     LUT4:I1->O            7   0.704   0.743  Display/BinToBCD/cent_0_cmp_ge00061 (Display/BinToBCD/cent_0_cmp_ge0006)
+     LUT3_D:I2->O          1   0.704   0.455  Display/BinToBCD/Madd__add0024_cy<1>11 (Display/BinToBCD/Madd__add0024_cy<1>)
+     LUT3:I2->O            4   0.704   0.622  Display/BinToBCD/dec_mux00211 (Display/BinToBCD/Madd__add0028_lut<3>)
+     LUT4:I2->O            1   0.704   0.000  Display/BinToBCD/cent_0_mux00091105_SW1_F (N304)
+     MUXF5:I0->O           1   0.321   0.424  Display/BinToBCD/cent_0_mux00091105_SW1 (N268)
+     LUT4:I3->O            1   0.704   0.000  Display/BinToBCD/cent_0_mux00092 (Display/BinToBCD/cent_0_mux0009)
+     FD:D                      0.308          Display/BinToBCD/cent_0
+    ----------------------------------------
+    Total                     27.753ns (15.348ns logic, 12.405ns route)
+                                       (55.3% logic, 44.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'RingOscillator/LUTout'
+  Clock period: 4.344ns (frequency: 230.203MHz)
+  Total number of paths / destination ports: 136 / 16
+-------------------------------------------------------------------------
+Delay:               4.344ns (Levels of Logic = 16)
+  Source:            Counter/Counter2/count_1 (FF)
+  Destination:       Counter/Counter2/count_15 (FF)
+  Source Clock:      RingOscillator/LUTout rising
+  Destination Clock: RingOscillator/LUTout rising
+
+  Data Path: Counter/Counter2/count_1 to Counter/Counter2/count_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.591   0.706  Counter/Counter2/count_1 (Counter/Counter2/count_1)
+     LUT1:I0->O            1   0.704   0.000  Counter/Counter2/Mcount_count_cy<1>_rt (Counter/Counter2/Mcount_count_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  Counter/Counter2/Mcount_count_cy<1> (Counter/Counter2/Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<2> (Counter/Counter2/Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<3> (Counter/Counter2/Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<4> (Counter/Counter2/Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<5> (Counter/Counter2/Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<6> (Counter/Counter2/Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<7> (Counter/Counter2/Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<8> (Counter/Counter2/Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<9> (Counter/Counter2/Mcount_count_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<10> (Counter/Counter2/Mcount_count_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<11> (Counter/Counter2/Mcount_count_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<12> (Counter/Counter2/Mcount_count_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<13> (Counter/Counter2/Mcount_count_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  Counter/Counter2/Mcount_count_cy<14> (Counter/Counter2/Mcount_count_cy<14>)
+     XORCY:CI->O           1   0.804   0.000  Counter/Counter2/Mcount_count_xor<15> (Counter/Result<15>1)
+     FDC:D                     0.308          Counter/Counter2/count_15
+    ----------------------------------------
+    Total                      4.344ns (3.638ns logic, 0.706ns route)
+                                       (83.7% logic, 16.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 36 / 8
+-------------------------------------------------------------------------
+Offset:              6.358ns (Levels of Logic = 3)
+  Source:            Display/DisplayController/count_16 (FF)
+  Destination:       seg0 (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Display/DisplayController/count_16 to seg0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.591   0.883  Display/DisplayController/count_16 (Display/DisplayController/count_16)
+     LUT3:I0->O            1   0.704   0.000  Display/DisplayController/Mmux_sseg_3 (Display/DisplayController/Mmux_sseg_3)
+     MUXF5:I1->O           4   0.321   0.587  Display/DisplayController/Mmux_sseg_2_f5 (seg5_OBUF)
+     OBUF:I->O                 3.272          seg0_OBUF (seg0)
+    ----------------------------------------
+    Total                      6.358ns (4.888ns logic, 1.470ns route)
+                                       (76.9% logic, 23.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.04 secs
+ 
 --> 
 
-Total memory usage is 289520 kilobytes
+Total memory usage is 267020 kilobytes
 
-Number of errors   :    2 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   24 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

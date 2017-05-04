@@ -1,8 +1,8 @@
 INTSTYLE=impact
-INFILE=C:\Users\Saulo Mendes\Documents\Nova pasta\RingOsc\impact.xsl
-OUTFILE=C:\Users\Saulo Mendes\Documents\Nova pasta\RingOsc\impact.xsl
+INFILE=C:\Users\Saulo\Documents\RingOsc\impact.xsl
+OUTFILE=C:\Users\Saulo\Documents\RingOsc\impact.xsl
 FAMILY=Multiple
 PART=Multiple
-WORKINGDIR=C:\Users\Saulo Mendes\Documents\Nova pasta\RingOsc
+WORKINGDIR=C:\Users\Saulo\Documents\RingOsc
 LICENSE=iMPACT
 USER_INFO=iMPACT

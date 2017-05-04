@@ -18,14 +18,15 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module BinToBCD(clk,bin,un,dec,cent
+module BinToBCD(clk,bin,un,dec,cent, milh
     );
 	
 	input clk;
-	input [7:0] bin;
+	input [15:0] bin;
 	output reg [3:0] cent = 0 ;
 	output reg [3:0] dec = 0;
 	output reg [3:0] un = 0;
+	output reg [3:0] milh = 0;
 	
 	integer i;
 	
@@ -33,8 +34,12 @@ module BinToBCD(clk,bin,un,dec,cent
 		cent=0;
 		dec=0;
 		un=0;
-		for (i=7;i>=0;i=i-1)
+		milh=0;
+		for (i=15;i>=0;i=i-1)
 		begin
+			if (milh >=5) begin
+				milh = milh +3;
+			end
 			if(cent>=5) begin
 				cent = cent+3;
 			end
@@ -44,6 +49,9 @@ module BinToBCD(clk,bin,un,dec,cent
 			if (un >=5) begin
 				un = un +3;
 			end
+			
+			milh = milh << 1;
+			milh[0] = cent[3];
 			
 			cent = cent << 1;
 			cent[0] = dec[3];
