@@ -47,7 +47,7 @@ module Counting_Circ_tb;
 		
       fork  
 			repeat(500)#10 clk = ~clk;
-			repeat(500)#8 Ring_in = ~Ring_in;
+			repeat(500)#9 Ring_in = ~Ring_in;
 		join
 	end
       

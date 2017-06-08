@@ -1,0 +1,538 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> Reading design: SensorController.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SensorController.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SensorController"
+Output Format                      : NGC
+Target Device                      : xc3s250e-4-tq144
+
+---- Source Options
+Top Module Name                    : SensorController
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "DisplayController.v" in library work
+Compiling verilog file "BinToBCD.v" in library work
+Module <DisplayController> compiled
+Compiling verilog file "SensorController.v" in library work
+Module <BinToBCD> compiled
+Module <SensorController> compiled
+No errors in compilation
+Analysis of file <"SensorController.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <SensorController> in library <work>.
+
+Analyzing hierarchy for module <BinToBCD> in library <work>.
+
+Analyzing hierarchy for module <DisplayController> in library <work> with parameters.
+	N = "00000000000000000000000000010010"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <SensorController>.
+Module <SensorController> is correct for synthesis.
+ 
+Analyzing module <BinToBCD> in library <work>.
+Module <BinToBCD> is correct for synthesis.
+ 
+Analyzing module <DisplayController> in library <work>.
+	N = 32'sb00000000000000000000000000010010
+Module <DisplayController> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <BinToBCD>.
+    Related source file is "BinToBCD.v".
+    Found 4-bit register for signal <un>.
+    Found 4-bit register for signal <milh>.
+    Found 4-bit register for signal <cent>.
+    Found 4-bit register for signal <dec>.
+    Found 4-bit adder for signal <$add0000> created at line 50.
+    Found 4-bit adder for signal <$add0001> created at line 50.
+    Found 4-bit adder for signal <$add0002> created at line 50.
+    Found 4-bit adder for signal <$add0003> created at line 47.
+    Found 4-bit adder for signal <$add0004> created at line 50.
+    Found 4-bit adder for signal <$add0005> created at line 47.
+    Found 4-bit adder for signal <$add0006> created at line 50.
+    Found 4-bit adder for signal <$add0007> created at line 47.
+    Found 4-bit adder for signal <$add0008> created at line 50.
+    Found 4-bit adder for signal <$add0009> created at line 44.
+    Found 4-bit adder for signal <$add0010> created at line 47.
+    Found 4-bit adder for signal <$add0011> created at line 50.
+    Found 4-bit adder for signal <$add0012> created at line 44.
+    Found 4-bit adder for signal <$add0013> created at line 47.
+    Found 4-bit adder for signal <$add0014> created at line 50.
+    Found 4-bit adder for signal <$add0015> created at line 44.
+    Found 4-bit adder for signal <$add0016> created at line 47.
+    Found 4-bit adder for signal <$add0017> created at line 50.
+    Found 4-bit adder for signal <$add0018> created at line 41.
+    Found 4-bit adder for signal <$add0019> created at line 44.
+    Found 4-bit adder for signal <$add0020> created at line 47.
+    Found 4-bit adder for signal <$add0021> created at line 50.
+    Found 4-bit adder for signal <$add0022> created at line 41.
+    Found 4-bit adder for signal <$add0023> created at line 44.
+    Found 4-bit adder for signal <$add0024> created at line 47.
+    Found 4-bit adder for signal <$add0025> created at line 50.
+    Found 4-bit adder for signal <$add0026> created at line 41.
+    Found 4-bit adder for signal <$add0027> created at line 44.
+    Found 4-bit adder for signal <$add0028> created at line 47.
+    Found 4-bit adder for signal <$add0029> created at line 50.
+    Found 4-bit adder for signal <$add0030> created at line 41.
+    Found 4-bit adder for signal <$add0031> created at line 44.
+    Found 4-bit adder for signal <$add0032> created at line 47.
+    Found 4-bit adder for signal <$add0033> created at line 50.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0000> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0001> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0002> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0003> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0004> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0005> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0006> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0007> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0008> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0009> created at line 46.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0000> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0001> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0002> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0003> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0004> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0005> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0006> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0007> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0008> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0009> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0010> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0011> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0012> created at line 49.
+    Found 4-bit comparator greatequal for signal <milh$cmp_ge0000> created at line 40.
+    Found 4-bit comparator greatequal for signal <milh$cmp_ge0001> created at line 40.
+    Found 4-bit comparator greatequal for signal <milh$cmp_ge0002> created at line 40.
+    Found 4-bit comparator greatequal for signal <milh$cmp_ge0003> created at line 40.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0000> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0001> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0002> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0003> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0004> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0005> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0006> created at line 43.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred  34 Adder/Subtractor(s).
+	inferred  34 Comparator(s).
+Unit <BinToBCD> synthesized.
+
+
+Synthesizing Unit <DisplayController>.
+    Related source file is "DisplayController.v".
+    Found 16x7-bit ROM for signal <sseg_temp>.
+    Found 1-of-4 decoder for signal <an_temp>.
+    Found 18-bit up counter for signal <count>.
+    Found 4-bit 4-to-1 multiplexer for signal <sseg>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <DisplayController> synthesized.
+
+
+Synthesizing Unit <SensorController>.
+    Related source file is "SensorController.v".
+WARNING:Xst:653 - Signal <register> is used but never assigned. This sourceless signal will be automatically connected to value 0000101000010010.
+Unit <SensorController> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 34
+ 4-bit adder                                           : 34
+# Counters                                             : 1
+ 18-bit up counter                                     : 1
+# Registers                                            : 16
+ 1-bit register                                        : 16
+# Comparators                                          : 34
+ 4-bit comparator greatequal                           : 34
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <un_0> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 34
+ 3-bit adder                                           : 4
+ 4-bit adder                                           : 30
+# Counters                                             : 1
+ 18-bit up counter                                     : 1
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+# Comparators                                          : 34
+ 4-bit comparator greatequal                           : 34
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <un_0> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch un_3 hinder the constant cleaning in the block BinToBCD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch milh_1 hinder the constant cleaning in the block BinToBCD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch cent_2 hinder the constant cleaning in the block BinToBCD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch cent_0 hinder the constant cleaning in the block BinToBCD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch dec_2 hinder the constant cleaning in the block BinToBCD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch dec_1 hinder the constant cleaning in the block BinToBCD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch dec_0 hinder the constant cleaning in the block BinToBCD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <milh_3> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <milh_2> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <milh_0> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cent_3> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dec_3> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cent_1> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <un_2> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <un_1> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <BinToBCD/un_3> in Unit <SensorController> is equivalent to the following 6 FFs/Latches, which will be removed : <BinToBCD/dec_0> <BinToBCD/dec_1> <BinToBCD/dec_2> <BinToBCD/cent_0> <BinToBCD/cent_2> <BinToBCD/milh_1> 
+
+Optimizing unit <SensorController> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SensorController, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 19
+ Flip-Flops                                            : 19
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : SensorController.ngr
+Top Level Output File Name         : SensorController
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 15
+
+Cell Usage :
+# BELS                             : 69
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 17
+#      LUT2                        : 4
+#      LUT3                        : 2
+#      LUT4                        : 7
+#      MUXCY                       : 17
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 18
+# FlipFlops/Latches                : 19
+#      FD                          : 1
+#      FDC                         : 18
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 1
+#      OBUF                        : 13
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250etq144-4 
+
+ Number of Slices:                       17  out of   2448     0%  
+ Number of Slice Flip Flops:             19  out of   4896     0%  
+ Number of 4 input LUTs:                 31  out of   4896     0%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    108    13%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+fpga_clk1                          | BUFGP                  | 19    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 18    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.351ns (Maximum Frequency: 229.832MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 7.974ns
+   Maximum combinational path delay: 5.575ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'fpga_clk1'
+  Clock period: 4.351ns (frequency: 229.832MHz)
+  Total number of paths / destination ports: 171 / 18
+-------------------------------------------------------------------------
+Delay:               4.351ns (Levels of Logic = 18)
+  Source:            DisplayController/count_1 (FF)
+  Destination:       DisplayController/count_17 (FF)
+  Source Clock:      fpga_clk1 rising
+  Destination Clock: fpga_clk1 rising
+
+  Data Path: DisplayController/count_1 to DisplayController/count_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.591   0.595  DisplayController/count_1 (DisplayController/count_1)
+     LUT1:I0->O            1   0.704   0.000  DisplayController/Mcount_count_cy<1>_rt (DisplayController/Mcount_count_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  DisplayController/Mcount_count_cy<1> (DisplayController/Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  DisplayController/Mcount_count_cy<2> (DisplayController/Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  DisplayController/Mcount_count_cy<3> (DisplayController/Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  DisplayController/Mcount_count_cy<4> (DisplayController/Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  DisplayController/Mcount_count_cy<5> (DisplayController/Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  DisplayController/Mcount_count_cy<6> (DisplayController/Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  DisplayController/Mcount_count_cy<7> (DisplayController/Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  DisplayController/Mcount_count_cy<8> (DisplayController/Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  DisplayController/Mcount_count_cy<9> (DisplayController/Mcount_count_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  DisplayController/Mcount_count_cy<10> (DisplayController/Mcount_count_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  DisplayController/Mcount_count_cy<11> (DisplayController/Mcount_count_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  DisplayController/Mcount_count_cy<12> (DisplayController/Mcount_count_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  DisplayController/Mcount_count_cy<13> (DisplayController/Mcount_count_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  DisplayController/Mcount_count_cy<14> (DisplayController/Mcount_count_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  DisplayController/Mcount_count_cy<15> (DisplayController/Mcount_count_cy<15>)
+     MUXCY:CI->O           0   0.059   0.000  DisplayController/Mcount_count_cy<16> (DisplayController/Mcount_count_cy<16>)
+     XORCY:CI->O           1   0.804   0.000  DisplayController/Mcount_count_xor<17> (Result<17>)
+     FDC:D                     0.308          DisplayController/count_17
+    ----------------------------------------
+    Total                      4.351ns (3.756ns logic, 0.595ns route)
+                                       (86.3% logic, 13.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'fpga_clk1'
+  Total number of paths / destination ports: 64 / 11
+-------------------------------------------------------------------------
+Offset:              7.974ns (Levels of Logic = 4)
+  Source:            DisplayController/count_16 (FF)
+  Destination:       seg3 (PAD)
+  Source Clock:      fpga_clk1 rising
+
+  Data Path: DisplayController/count_16 to seg3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.591   1.175  DisplayController/count_16 (DisplayController/count_16)
+     LUT3:I0->O            1   0.704   0.000  DisplayController/Mmux_sseg_32 (DisplayController/Mmux_sseg_3)
+     MUXF5:I1->O           7   0.321   0.787  DisplayController/Mmux_sseg_2_f5 (DisplayController/sseg<0>)
+     LUT4:I1->O            1   0.704   0.420  DisplayController/Mrom_sseg_temp61 (seg6_OBUF)
+     OBUF:I->O                 3.272          seg6_OBUF (seg6)
+    ----------------------------------------
+    Total                      7.974ns (5.592ns logic, 2.382ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               5.575ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       led0 (PAD)
+
+  Data Path: reset to led0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   1.218   1.085  reset_IBUF (led0_OBUF)
+     OBUF:I->O                 3.272          led0_OBUF (led0)
+    ----------------------------------------
+    Total                      5.575ns (4.490ns logic, 1.085ns route)
+                                       (80.5% logic, 19.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.84 secs
+ 
+--> 
+
+Total memory usage is 259724 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

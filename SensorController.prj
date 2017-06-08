@@ -1,0 +1,3 @@
+verilog work "DisplayController.v"
+verilog work "BinToBCD.v"
+verilog work "SensorController.v"

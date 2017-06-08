@@ -35,7 +35,7 @@ module Counting_circuit(clk, Ring_in, value_out);
 		always@(*)
 			if(rst_value <= max) 
 				begin
-					value_out = 0;
+					//value_out = 0;
 					rst = 1;
 				end else begin
 				value_out = ring_value;

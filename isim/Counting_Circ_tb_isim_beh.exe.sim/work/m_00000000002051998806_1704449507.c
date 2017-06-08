@@ -298,7 +298,7 @@ LAB5:    t2 = (t0 + 1768);
 
 LAB7:    xsi_set_current_line(50, ng0);
     t11 = (t0 + 2992);
-    xsi_process_wait(t11, 8000LL);
+    xsi_process_wait(t11, 9000LL);
     *((char **)t1) = &&LAB9;
     goto LAB1;
 

@@ -28,7 +28,7 @@ module Top(clk, Mode, Stress, seg0,seg1,seg2,seg3,seg4,seg5,seg6,dp,an0,an1,an2,
 	
 	Counting_circuit Counter(.clk(clk), .Ring_in(ring_out), .value_out(value));
 	
-	Display_interface Display(.clk(clk), .value(value),
+	/*Display_interface Display(.clk(clk), .value(value),
 										.seg0(seg0),
 										.seg1(seg1),
 										.seg2(seg2),
@@ -36,7 +36,7 @@ module Top(clk, Mode, Stress, seg0,seg1,seg2,seg3,seg4,seg5,seg6,dp,an0,an1,an2,
 										.seg4(seg4),
 										.seg5(seg5),
 										.seg6(seg6),
-										.dp(dp),.an0(an0),.an1(an1),.an2(an2),.an3(an3));
+										.dp(dp),.an0(an0),.an1(an1),.an2(an2),.an3(an3)); */
 	
 	
 	

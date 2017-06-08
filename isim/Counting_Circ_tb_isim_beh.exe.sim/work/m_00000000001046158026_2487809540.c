@@ -22,8 +22,8 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "C:/Users/Saulo/Documents/RingOsc/Counting_circuit.v";
-static int ng1[] = {0, 0};
-static int ng2[] = {1, 0};
+static int ng1[] = {1, 0};
+static int ng2[] = {0, 0};
 
 
 
@@ -110,19 +110,15 @@ LAB6:    t9 = (t7 + 4);
 
 LAB10:    xsi_set_current_line(37, ng0);
 
-LAB13:    xsi_set_current_line(38, ng0);
+LAB13:    xsi_set_current_line(39, ng0);
     t16 = ((char*)((ng1)));
-    t17 = (t0 + 2224);
-    xsi_vlogvar_assign_value(t17, t16, 0, 0, 16);
-    xsi_set_current_line(39, ng0);
-    t2 = ((char*)((ng2)));
-    t3 = (t0 + 2384);
-    xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
+    t17 = (t0 + 2384);
+    xsi_vlogvar_assign_value(t17, t16, 0, 0, 1);
 
 LAB12:    goto LAB2;
 
 LAB15:    xsi_set_current_line(43, ng0);
-    t3 = ((char*)((ng1)));
+    t3 = ((char*)((ng2)));
     t4 = (t0 + 2384);
     xsi_vlogvar_assign_value(t4, t3, 0, 0, 1);
     goto LAB12;
